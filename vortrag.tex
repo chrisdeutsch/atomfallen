@@ -4,6 +4,22 @@
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
 
+% AMS Pakete
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% Einheiten
+\usepackage{siunitx}
+\sisetup{
+	output-decimal-marker={,},
+	separate-uncertainty
+}
+
+% Grafiken
+\usepackage{graphicx}
+
+
 % Theme
 \usetheme{Boadilla}
 \usecolortheme{rose}
@@ -11,9 +27,13 @@
 \useinnertheme{rectangles}
 \usefonttheme[onlymath]{serif}
 
+% [num] Zitationen
+\setbeamertemplate{bibliography item}[text]
+
 % Navigationsleiste ausschalten
 \beamertemplatenavigationsymbolsempty
 
+\DeclareMathOperator{\divergence}{div}
 
 \author[Christopher Deutsch]
 {Christopher Deutsch}
@@ -22,14 +42,14 @@
 {Atomfallen}
 
 \subtitle
-{Ein Überblick über typische Fallen}
+{Überblick über die Funktionsweise der wichtigsten Fallen}
 %\logo{}
 
 \institute[]
 {Rheinische Friedrich-Wilhelms-Universität Bonn \\
 Proseminar Präsentationstechnik SS15}
 
-\date{1. Juni 2015}
+\date{8. Juni 2015}
 
 %\setbeamercovered{transparent}
 %\setbeamertemplate{navigation symbols}{}
@@ -48,18 +68,51 @@ Proseminar Präsentationstechnik SS15}
 \end{frame}
 
 \begin{frame}{Wofür braucht man Atomfallen?}
+	\begin{itemize}
+		\item BEC (niedrige Temperaturen)
+		\item High-Resolution-Spectroscopy
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Grundlagen}
+	\begin{itemize}
+		\item Fallenpotential und Tiefe
+		\item Temperatur der Teilchen (Raumtemperatur $\approx \frac{1}{40} \si{eV}$)
+		\item Köhlung?
+		
+	\end{itemize}
 \end{frame}
 
 
 \section{Ionenfallen}
 
-\begin{frame}{Grundlagen und das Earnshaw-Theorem}
+\begin{frame}{Grundlagen der Ionenfallen}
 \end{frame}
 
-\begin{frame}{Paul-Falle (mechanisches Analogon)}
+\begin{frame}
+	1. Maxwell-Gleichung für den ladungsfreien Raum (Quellenfreiheit):
+	\begin{align}
+	\divergence \vec{E} = 0
+	\end{align}
+	Gauß'scher Integralsatz:
+	\begin{align}
+	\int_{V} \divergence \vec{E} \, \mathrm{d}V = \oint_{S = \partial V} \vec{E} \cdot \vec{n} \, \mathrm{d}S = 0
+	\end{align}
+	Fangen eines positiven Ions in einem Raumvolumen: $\vec{E} \cdot \vec{n} \stackrel{!}{<} 0$
+	
+	\begin{block}{Earnshaw-Theorem:}
+		Ein geladenes Teilchen kann nicht durch elektrostatische Kräfte in einem Raumvolumen gefangen werden.
+	\end{block}
+\end{frame}
+
+\begin{frame}{Lineare Paul-Falle ($x$-$y$-Ebene)}
+	\begin{columns}[t]
+		\column{0.5\textwidth}
+		Lösung: Verwendung von elektrischen Wechselfeldern
+		
+		\column{0.5\textwidth}
+		Sattelpotential
+	\end{columns}
 \end{frame}
 
 \begin{frame}{Paul-Falle}
@@ -99,6 +152,18 @@ Proseminar Präsentationstechnik SS15}
 \section{Vergleich}
 
 \begin{frame}{Fallentiefen}
+\end{frame}
+
+\section{Literatur}
+
+\begin{frame}{Literatur}
+	\begin{thebibliography}{9}
+		\bibitem{leo}
+		W. R. Leo,
+		\emph{Techniques for Nuclear and Particle Physics Experiments},
+		Springer 1994
+	\end{thebibliography}
+	
 \end{frame}
 
 \end{document}
