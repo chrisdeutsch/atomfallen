@@ -71,6 +71,8 @@ Proseminar Präsentationstechnik SS15}
 	\begin{itemize}
 		\item BEC (niedrige Temperaturen)
 		\item High-Resolution-Spectroscopy
+		\item Atomuhren
+		\item Quantencomputer (Qubit)
 	\end{itemize}
 \end{frame}
 
@@ -89,15 +91,17 @@ Proseminar Präsentationstechnik SS15}
 \begin{frame}{Grundlagen der Ionenfallen}
 \end{frame}
 
+
+
 \begin{frame}
 	1. Maxwell-Gleichung für den ladungsfreien Raum (Quellenfreiheit):
 	\begin{align}
 	\divergence \vec{E} = 0
 	\end{align}
-	Gauß'scher Integralsatz:
 	\begin{align}
 	\int_{V} \divergence \vec{E} \, \mathrm{d}V = \oint_{S = \partial V} \vec{E} \cdot \vec{n} \, \mathrm{d}S = 0
 	\end{align}
+	
 	Fangen eines positiven Ions in einem Raumvolumen: $\vec{E} \cdot \vec{n} \stackrel{!}{<} 0$
 	
 	\begin{block}{Earnshaw-Theorem:}
@@ -119,7 +123,20 @@ Proseminar Präsentationstechnik SS15}
 	\end{columns}
 \end{frame}
 
+\begin{frame}
+	\begin{figure}[h]
+		\centering
+		\includegraphics*[width = 0.8\textwidth]{./figures/lineare_paulfalle.pdf}
+	\end{figure}
+\end{frame}
+
 \begin{frame}{Paul-Falle}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{./figures/29_laser_cooled_ion_chain.jpg}
+	\caption{29 lasergekühlte Thorium-Atome ($\mathrm{Th}^{3+}$) in einer linearen Paul-Falle (Abstand etwa \SI{50}{\micro\metre}) \cite{campbell}}
+\end{figure}
+
 \end{frame}
 
 \begin{frame}{Penning-Falle(?)}
@@ -129,6 +146,22 @@ Proseminar Präsentationstechnik SS15}
 \section{Optische Fallen}
 
 \begin{frame}{Grundlagen: Streukraft}
+	\begin{columns}[t]
+		\column{0.5\textwidth}
+		\begin{itemize}
+			\item Absorption
+			\item spontante Emission (Isotrop)
+			\item mittlere (bremsende) Kraft
+		\end{itemize}
+		
+		\column{0.5\textwidth}
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=1.0\textwidth]{./figures/streukraft.pdf}
+		\end{figure}
+		
+	\end{columns}
+
 \end{frame}
 
 \begin{frame}{Grundlagen: Dopplereffekt}
@@ -162,10 +195,16 @@ Proseminar Präsentationstechnik SS15}
 
 \begin{frame}{Literatur}
 	\begin{thebibliography}{9}
-		\bibitem{leo}
-		W. R. Leo,
-		\emph{Techniques for Nuclear and Particle Physics Experiments},
-		Springer 1994
+		\bibitem{foot}
+		Christopher J. Foot,
+		\emph{Atomic Physics},
+		Oxford University Press 2005
+		
+		\bibitem{campbell}
+		Corey J. Campbell,
+		\emph{Trapping, Laser Cooling, and Spectroscopy of Thorium IV},
+		Georgia Institute of Technlogy 2011
+		
 	\end{thebibliography}
 	
 \end{frame}
