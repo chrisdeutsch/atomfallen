@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20150518172121" modified="D:20150518174041"/>
+<info created="D:20150518172121" modified="D:20150519093319"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -232,8 +232,8 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" matrix="1 0 0 1 -8 40" stroke="black">
-24 0 0 24 128 704 e
+<path layer="alpha" stroke="black">
+20 0 0 20 120 744 e
 </path>
 <path matrix="1 0 0 1 -8 44" stroke="black">
 120 688 m
@@ -244,68 +244,66 @@ h
 136 716 l
 </path>
 <use matrix="1 0 0 1 -8 40" name="mark/disk(sx)" pos="128 692" size="normal" stroke="black"/>
-<path matrix="1 0 0 1 -8 40" stroke="black" arrow="normal/normal">
+<path matrix="1 0 0 1 -12 40" stroke="black" arrow="normal/normal">
 152 704 m
 208 704 l
 </path>
-<text matrix="1 0 0 1 -8 36" transformations="translations" pos="204 712" stroke="black" type="label" width="5.012" height="7.125" depth="1.93" valign="baseline">$\vec{p}$</text>
-<path matrix="1 0 0 1 -12 8" stroke="red">
+<text matrix="1 0 0 1 -12 24" transformations="translations" pos="204 712" stroke="black" type="label" width="5.012" height="7.125" depth="1.93" halign="center" valign="center">$\vec{p}$</text>
+<path matrix="1 0 0 1 -20 8" stroke="red">
 264 740 m
 264 740 l
 264 740 l
 264 740 l
 h
 </path>
-<path matrix="1 0 0 1 -19 16" stroke="red" arrow="normal/normal">
+<path matrix="1 0 0 1 -27 16" stroke="red" arrow="normal/normal">
 232 728 m
 228 728 l
 </path>
-<text matrix="1 0 0 1 -40 8" transformations="translations" pos="276 740" stroke="black" type="label" width="23.468" height="6.808" depth="0" valign="baseline">Laser</text>
-<path matrix="1 0 0 1 -8 -40" stroke="black">
-24 0 0 24 128 704 e
+<text matrix="1 0 0 1 -48 8" transformations="translations" pos="276 740" stroke="black" type="label" width="23.468" height="6.808" depth="0" valign="baseline">Laser</text>
+<path matrix="1 0 0 1 0 8" stroke="black">
+20 0 0 20 120 664 e
 </path>
-<path matrix="1 0 0 1 -8 -36" stroke="black">
+<path matrix="1 0 0 1 -8 -28" stroke="black">
 120 688 m
 136 688 l
 </path>
-<path matrix="1 0 0 1 -8 -40" stroke="black">
+<path matrix="1 0 0 1 -8 -32" stroke="black">
 120 716 m
 136 716 l
 </path>
-<use matrix="1 0 0 1 -8 -16" name="mark/disk(sx)" pos="128 692" size="normal" stroke="black"/>
-<path stroke="black" arrow="normal/normal">
+<use matrix="1 0 0 1 -8 -8" name="mark/disk(sx)" pos="128 692" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 -4 8" stroke="black" arrow="normal/normal">
 144 664 m
 184 664 l
 </path>
-<text matrix="1 0 0 1 -24 -44" transformations="translations" pos="204 712" stroke="black" type="label" width="5.012" height="7.125" depth="1.93" valign="baseline">$\vec{p}$</text>
-<path matrix="1 0 0 1 -8 -120" stroke="black">
-24 0 0 24 128 704 e
+<path matrix="1 0 0 1 0 16" stroke="black">
+20 -0 0 20 120 584 e
 </path>
-<path matrix="1 0 0 1 -8 -116" stroke="black">
+<path matrix="1 0 0 1 -8 -100" stroke="black">
 120 688 m
 136 688 l
 </path>
-<path matrix="1 0 0 1 -8 -120" stroke="black">
+<path matrix="1 0 0 1 -8 -104" stroke="black">
 120 716 m
 136 716 l
 </path>
-<use matrix="1 0 0 1 -8 -120" name="mark/disk(sx)" pos="128 692" size="normal" stroke="black"/>
-<path stroke="black" arrow="normal/normal">
-143.025 577.228 m
-188 564 l
+<use matrix="1 0 0 1 -8 -104" name="mark/disk(sx)" pos="128 692" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 0 16" stroke="black" arrow="normal/normal">
+139.187 578.357 m
+186.596 564.413 l
 </path>
-<text matrix="1 0 0 1 -16.7437 -142.075" transformations="translations" pos="204 712" stroke="black" type="label" width="5.012" height="7.125" depth="1.93" valign="baseline">$\vec{p}$</text>
-<use name="mark/circle(sx)" pos="120 652" size="normal" stroke="black"/>
-<path stroke="black" arrow="normal/tiny">
+<use matrix="1 0 0 1 0 8" name="mark/circle(sx)" pos="120 652" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 0 8" stroke="black" arrow="normal/tiny">
 120 656 m
 120 672 l
 </path>
-<use matrix="1 0 0 1 0 -56" name="mark/circle(sx)" pos="120 652" size="normal" stroke="black"/>
-<path matrix="1 0 0 1 0 -8" stroke="black" arrow="normal/tiny">
+<use matrix="1 0 0 1 0 -40" name="mark/circle(sx)" pos="120 652" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 0 8" stroke="black" arrow="normal/tiny">
 120 600 m
 120 584 l
 </path>
-<path matrix="1 0 0 1 -12 56" stroke="red">
+<path matrix="1 0 0 1 -20 56" stroke="red">
 224 688 m
 224.162 688.144 224.323 688.283 224.485 688.416 c
 224.646 688.549 224.808 688.676 224.97 688.79 c
@@ -407,7 +405,7 @@ h
 271.192 687.305 271.354 687.432 271.515 687.564 c
 271.677 687.696 271.838 687.835 272 687.979 c
 </path>
-<path matrix="1 0 0 1 0 32" stroke="red">
+<path matrix="1 0 0 1 3 45" stroke="red">
 93.4517 598.334 m
 93.653 598.263 93.8565 598.195 94.0588 598.125 c
 94.261 598.054 94.4601 597.983 94.652 597.907 c
@@ -470,23 +468,23 @@ h
 107.217 573.623 107.408 573.547 107.603 573.473 c
 107.798 573.399 107.999 573.329 108.205 573.261 c
 </path>
-<path matrix="1 0 0 1 5.68412 34.559" stroke="red" arrow="normal/normal">
+<path matrix="1 0 0 1 8.68412 47.559" stroke="red" arrow="normal/normal">
 86.1849 599.68 m
 85 601.732 l
 </path>
-<text matrix="1 0 0 1 -12.8208 20.5577" transformations="translations" pos="94.8711 610.263" stroke="black" type="label" width="5.711" height="4.297" depth="1.93" valign="baseline">$\gamma$</text>
-<path matrix="1 0 0 1 -12 -72" stroke="red">
+<text matrix="1 0 0 1 -8.8208 30.5577" transformations="translations" pos="94.8711 610.263" stroke="black" type="label" width="5.711" height="4.297" depth="1.93" valign="baseline">$\gamma$</text>
+<path matrix="1 0 0 1 -20 -64" stroke="red">
 264 740 m
 264 740 l
 264 740 l
 264 740 l
 h
 </path>
-<path matrix="1 0 0 1 -19 -64" stroke="red" arrow="normal/normal">
+<path matrix="1 0 0 1 -27 -56" stroke="red" arrow="normal/normal">
 232 728 m
 228 728 l
 </path>
-<path matrix="1 0 0 1 -12 -24" stroke="red">
+<path matrix="1 0 0 1 -20 -16" stroke="red">
 224 688 m
 224.162 688.144 224.323 688.283 224.485 688.416 c
 224.646 688.549 224.808 688.676 224.97 688.79 c
@@ -588,18 +586,18 @@ h
 271.192 687.305 271.354 687.432 271.515 687.564 c
 271.677 687.696 271.838 687.835 272 687.979 c
 </path>
-<path matrix="1 0 0 1 -12 -152" stroke="red">
+<path matrix="1 0 0 1 -20 -136" stroke="red">
 264 740 m
 264 740 l
 264 740 l
 264 740 l
 h
 </path>
-<path matrix="1 0 0 1 -19 -144" stroke="red" arrow="normal/normal">
+<path matrix="1 0 0 1 -27 -128" stroke="red" arrow="normal/normal">
 232 728 m
 228 728 l
 </path>
-<path matrix="1 0 0 1 -12 -104" stroke="red">
+<path matrix="1 0 0 1 -20 -88" stroke="red">
 224 688 m
 224.162 688.144 224.323 688.283 224.485 688.416 c
 224.646 688.549 224.808 688.676 224.97 688.79 c
@@ -700,6 +698,16 @@ h
 270.707 686.982 270.869 687.08 271.03 687.193 c
 271.192 687.305 271.354 687.432 271.515 687.564 c
 271.677 687.696 271.838 687.835 272 687.979 c
+</path>
+<text matrix="1 0 0 1 -28 -48" transformations="translations" pos="204 712" stroke="black" type="label" width="5.012" height="7.125" depth="1.93" halign="center" valign="center">$\vec{p}$</text>
+<text matrix="1 0 0 1 -16 -127" transformations="translations" pos="204 712" stroke="black" type="label" width="5.012" height="7.125" depth="1.93" halign="right" valign="bottom">$\vec{p}$</text>
+<path stroke="lightgray" dash="dotted">
+196 744 m
+196 600 l
+</path>
+<path matrix="1 0 0 1 -12 -104" stroke="lightgray" dash="dashed" arrow="normal/normal">
+152 704 m
+208 704 l
 </path>
 </page>
 </ipe>

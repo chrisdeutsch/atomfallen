@@ -79,6 +79,9 @@ Proseminar Präsentationstechnik SS15}
 \begin{frame}{Grundlagen}
 	\begin{itemize}
 		\item Fallenpotential und Tiefe
+		\begin{align}
+			E = k_\mathrm{B} \cdot T
+		\end{align}
 		\item Temperatur der Teilchen (Raumtemperatur $\approx \frac{1}{40} \si{eV}$)
 		\item Köhlung?
 		
@@ -89,6 +92,11 @@ Proseminar Präsentationstechnik SS15}
 \section{Ionenfallen}
 
 \begin{frame}{Grundlagen der Ionenfallen}
+	\begin{itemize}
+		\item Kraft auf geladene Teilchen groß (EM-WW ist stark)
+		\item Große Fallentiefen (Keine Kühlung nötig) Teilchen können direkt in der Falle ionisiert werden
+		\item typische Fallentiefen: $\SI{6e6}{\kelvin}$ bei Betriebsspannung \SI{500}{V}
+	\end{itemize}
 \end{frame}
 
 
@@ -102,35 +110,81 @@ Proseminar Präsentationstechnik SS15}
 	\int_{V} \divergence \vec{E} \, \mathrm{d}V = \oint_{S = \partial V} \vec{E} \cdot \vec{n} \, \mathrm{d}S = 0
 	\end{align}
 	
+
+\end{frame}
+
+\begin{frame}
 	Fangen eines positiven Ions in einem Raumvolumen: $\vec{E} \cdot \vec{n} \stackrel{!}{<} 0$
-	
-	\begin{block}{Earnshaw-Theorem:}
-		Ein geladenes Teilchen kann nicht durch elektrostatische Kräfte in einem Raumvolumen gefangen werden.
-	\end{block}
+	\begin{figure}
+		\centering
+		\includegraphics*[width=0.5\textwidth]{./figures/earnshaw.pdf}
+	\end{figure}
+		\begin{block}{Earnshaw-Theorem:}
+			Ein geladenes Teilchen kann nicht durch elektrostatische Kräfte in einem Raumvolumen gefangen werden.
+		\end{block}
 \end{frame}
 
 \begin{frame}{Lineare Paul-Falle ($x$-$y$-Ebene)}
 	\begin{columns}[t]
 		\column{0.5\textwidth}
-		Lösung: Verwendung von elektrischen Wechselfeldern
+		Quadrupol:
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.8\textwidth]{./figures/lineare_paulfalle_xy_statisch.pdf}
+		\end{figure}
 		
 		\column{0.5\textwidth}
+		Quadrupol-Potential:
+		\begin{align}
+		\phi = \phi_0 + \frac{U_0}{2 \, r_0^2} (x^2-y^2)
+		\end{align}
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=0.95\textwidth]{./figures/sattelpotential.pdf}
-			\caption{Sattelpotential}
 		\end{figure}
 	\end{columns}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Lineare Paul-Falle ($x$-$y$-Ebene)}
+	\begin{columns}[t]
+		\column{0.5\textwidth}
+		Quadrupol:
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.8\textwidth]{./figures/lineare_paulfalle_xy_statisch_swapped.pdf}
+		\end{figure}
+		
+		\column{0.5\textwidth}
+		Quadrupol-Potential:
+		\begin{align}
+		\phi = \phi_0 - \frac{U_0}{2 \, r_0^2} (x^2-y^2)
+		\end{align}
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.95\textwidth]{./figures/sattelpotential2.pdf}
+		\end{figure}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Lineare Paul-Falle ($x$-$y$-Ebene)}
+	Nutze Trägheit des Teilchens und verwende zeitlich variierendes Potential:
+	\begin{align}
+		\phi = \phi_0 + \frac{U_0}{2 \, r_0} \cos(\Omega t) \, (x^2-y^2)
+	\end{align}
+	Typische Frequenzen im Radiobereich $\nu = \mathcal{O}(\SI{10}{MHz})$
+	
+	Stabilität der Falle ist sehr sensitiv auf Ladung der Teilchen, RF-Frequenz, Feldeigenschaften und \textbf{Masse} der Teilchen
+\end{frame}
+
+\begin{frame}{Paul-Falle (Erweiterung auf die $z$-Achse)}
 	\begin{figure}[h]
 		\centering
-		\includegraphics*[width = 0.8\textwidth]{./figures/lineare_paulfalle.pdf}
+		\includegraphics*[width = 0.5\textwidth]{./figures/lineare_paulfalle.pdf}
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Paul-Falle}
+\begin{frame}{Paul-Falle (Erweiterung auf die $z$-Achse)}
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.9\textwidth]{./figures/29_laser_cooled_ion_chain.jpg}
@@ -183,6 +237,7 @@ Proseminar Präsentationstechnik SS15}
 \section{Magnetfalle}
 
 \begin{frame}{Magnetfalle}
+typische Fallentiefe: \SI{0.07}{\kelvin}
 \end{frame}
 
 
