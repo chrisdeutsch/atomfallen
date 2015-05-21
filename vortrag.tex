@@ -9,6 +9,8 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 
+\usepackage{braket}
+
 % Einheiten
 \usepackage{siunitx}
 \sisetup{
@@ -66,16 +68,28 @@ Proseminar Präsentationstechnik SS15}
 
 \begin{frame}{Was sind Atomfallen?}
 	\begin{itemize}
-		\item Teilchen elastisch mit einer Koordinate im Raum verbunden:
-		\begin{align}
-		\vec{F} = - \alpha \vec{r}
-		\end{align}
-		Parabolische Potentiale
+		\item Teilchen die durch eine ortsabhängige Kraft in einem Raumvolumen eingeschlossen werden
 		\item Suspend matter without material walls
 		\item Minimaler Einfluss auf die innere Struktur
 		\item Minimale Heizung durch die Umgebung
 		\item Beobachtung von einzelnen Atomen über längere Zeit
 	\end{itemize}
+\end{frame}
+
+\begin{frame}{Grundlagen}
+	\begin{itemize}
+		\item Fallenpotential und Tiefe
+		\begin{align}
+		\Delta E = k_\mathrm{B} \cdot T
+		\end{align}
+		\item Temperatur der Teilchen (Raumtemperatur $\approx \frac{1}{40} \si{eV}$)
+		\item Köhlung?
+		
+	\end{itemize}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.6\textwidth]{./figures/fallentiefe.pdf}
+	\end{figure}
 \end{frame}
 
 \begin{frame}{Wofür braucht man Atomfallen?}
@@ -88,22 +102,6 @@ Proseminar Präsentationstechnik SS15}
 		\item Quantum measurements on single atoms
 		\item Quantum-state engineering
 	\end{itemize}
-\end{frame}
-
-\begin{frame}{Grundlagen}
-	\begin{itemize}
-		\item Fallenpotential und Tiefe
-		\begin{align}
-			E = k_\mathrm{B} \cdot T
-		\end{align}
-		\item Temperatur der Teilchen (Raumtemperatur $\approx \frac{1}{40} \si{eV}$)
-		\item Köhlung?
-		
-	\end{itemize}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.6\textwidth]{./figures/fallentiefe.pdf}
-	\end{figure}
 \end{frame}
 
 
@@ -253,21 +251,28 @@ Axiale Kraft kleiner als Radiale:
 
 \end{frame}
 
-\begin{frame}{Grundlagen: Feinstruktur und Zeeman-Aufspaltung}
-\end{frame}
-
-\begin{frame}{Dopplereffekt}
-	Doppler-Effekt $k = \omega / c$:
-	\begin{align}
-		\Delta \omega = - k v \cos(\theta)
-	\end{align}
-\end{frame}
-
 \begin{frame}{Optische Melasse}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{./figures/melasse.pdf}
 \end{figure}
+\end{frame}
+
+\begin{frame}{Grundlagen: Feinstruktur und Zeeman-Aufspaltung}
+	\begin{itemize}
+		\item Ein Atom hat ein magnetisches Dipolmoment $\vec{\mu}$ aufgrund des Gesamtdrehimpulses $\vec{J}$ (Zusammengesetzt aus Bahndrehimpuls $\vec{L}$ und Spin $\vec{S}$).
+		\begin{align}
+		\vec{\mu} = - \frac{\mu_\mathrm{B} g_J \vec{J}}{\hbar} \quad \text{unnötig}
+		\end{align}
+		\item Die potentielle Energie eines magnetischen Dipols im homogenen Magnetfeld ist gegeben durch:
+		\begin{align}
+		V = - \vec{\mu} \cdot \vec{B}
+		\end{align}
+		\item Im externen Magnetfeld $\vec{B}$ führt dies zu einer Aufspaltung der Energieniveaus:
+		\begin{align}
+		\Delta E = \mu_\mathrm{B} \, g_J \, m_J \, B
+		\end{align}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Magneto-optische Falle}
@@ -277,6 +282,16 @@ Axiale Kraft kleiner als Radiale:
 	\centering
 	\includegraphics[width=0.8\textwidth]{./figures/mot.pdf}
 \end{figure}
+\end{frame}
+
+\begin{frame}{MOT}
+	\begin{itemize}
+		\item Magnetfeld
+		\item typischer Versuchsablauf: MOT beladen durch atomischen Strahl (Zeeman-Slower), MOT wird abgeschaltet damit durch optische Melasse gekühlt wird (Zeeman-Effekt hat negativen Einfluss auf Dopplerkühlung)
+		\item In einer gefüllten Falle kommt es zur ständigen Streuung des Laserlichts, was mit dem Auge/CCD sichtbar ist
+		\item Gebraucht zum Laden von Dipolfallen/Magnetfallen
+		\item typisches Magnetfeld \SI{0.1}{\tesla\per\metre}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Dipol-Falle (opt. Pinzette) (?)}

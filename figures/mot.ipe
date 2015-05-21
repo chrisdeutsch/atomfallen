@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20150520154016" modified="D:20150520155848"/>
+<ipe version="70005" creator="Ipe 7.1.5">
+<info created="D:20150520154016" modified="D:20150521214008"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -254,16 +254,16 @@ h
 </path>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="228 784" stroke="black" type="label" width="7.929" height="6.808" depth="0" valign="baseline">$E$</text>
 <text matrix="1 0 0 1 8 -8" transformations="translations" pos="356 620" stroke="black" type="label" width="5.071" height="4.289" depth="0" valign="baseline">$z$</text>
-<text matrix="1 0 0 1 12 4" transformations="translations" pos="368 748" stroke="black" type="label" width="15.229" height="6.812" depth="1.49" halign="right" valign="center">$M_J$</text>
-<text matrix="1 0 0 1 -252 4" transformations="translations" pos="368 748" stroke="black" type="label" width="15.229" height="6.812" depth="1.49" halign="right" valign="center">$M_J$</text>
+<text matrix="1 0 0 1 12 4" transformations="translations" pos="368 748" stroke="black" type="label" width="14.311" height="4.294" depth="1.49" halign="right" valign="center">$m_J$</text>
+<text matrix="1 0 0 1 -252 4" transformations="translations" pos="368 748" stroke="black" type="label" width="14.311" height="4.294" depth="1.49" halign="right" valign="center">$m_J$</text>
 <text matrix="1 0 0 1 8 8" transformations="translations" pos="368 728" stroke="black" type="label" width="4.981" height="6.42" depth="0" halign="right" valign="center">$1$</text>
 <text matrix="1 0 0 1 8 0" transformations="translations" pos="368 704" stroke="black" type="label" width="4.981" height="6.42" depth="0" halign="right" valign="center">$0
 $</text>
 <text matrix="1 0 0 1 0 4" transformations="translations" pos="376 668" stroke="black" type="label" width="12.73" height="6.421" depth="0.83" halign="right" valign="center">$-1$</text>
-<text matrix="1 0 0 1 -256 8" transformations="translations" pos="368 728" stroke="black" type="label" width="4.981" height="6.42" depth="0" halign="right" valign="center">$1$</text>
+<text matrix="1 0 0 1 -256 -56" transformations="translations" pos="368 728" stroke="black" type="label" width="4.981" height="6.42" depth="0" halign="right" valign="center">$1$</text>
 <text matrix="1 0 0 1 -256 0" transformations="translations" pos="368 704" stroke="black" type="label" width="4.981" height="6.42" depth="0" halign="right" valign="center">$0
 $</text>
-<text matrix="1 0 0 1 -264 4" transformations="translations" pos="376 668" stroke="black" type="label" width="12.73" height="6.421" depth="0.83" halign="right" valign="center">$-1$</text>
+<text matrix="1 0 0 1 -264 68" transformations="translations" pos="376 668" stroke="black" type="label" width="12.73" height="6.421" depth="0.83" halign="right" valign="center">$-1$</text>
 <path stroke="black" arrow="normal/normal">
 160 608 m
 160 682.667 l
@@ -501,5 +501,17 @@ $</text>
 244 608 l
 </path>
 <text transformations="translations" pos="244 644" stroke="black" type="label" width="5.551" height="3.432" depth="0" halign="center" valign="center" size="footnote">$\omega$</text>
+<use name="mark/disk(sx)" pos="160 608" size="normal" stroke="gray"/>
+<use name="mark/disk(sx)" pos="320 608" size="normal" stroke="gray"/>
+<path stroke="black" fill="white" arrow="normal/tiny">
+160 604 m
+184 604 l
+</path>
+<path stroke="black" fill="white" arrow="normal/tiny">
+320 604 m
+296 604 l
+</path>
+<text matrix="1 0 0 1 0 4" transformations="translations" pos="184 596" stroke="black" type="label" width="6.535" height="5.446" depth="0" halign="center" valign="top" size="footnote">$F$</text>
+<text matrix="1 0 0 1 112 4" transformations="translations" pos="184 596" stroke="black" type="label" width="6.535" height="5.446" depth="0" halign="center" valign="top" size="footnote">$F$</text>
 </page>
 </ipe>

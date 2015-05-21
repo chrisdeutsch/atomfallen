@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20150521125648" modified="D:20150521130726"/>
+<ipe version="70005" creator="Ipe 7.1.5">
+<info created="D:20150521125648" modified="D:20150521154340"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -357,6 +357,5 @@ h
 80 720 l
 </path>
 <text matrix="1 0 0 1 8 0" transformations="translations" pos="76 744" stroke="black" type="label" width="16.231" height="6.808" depth="0" halign="right" valign="center">$\Delta E$</text>
-<text matrix="1 0 0 1 0 -4" transformations="translations" pos="160 776" stroke="black" type="label" width="55.169" height="6.923" depth="1.49" halign="center" valign="bottom">$\Delta E = k_\mathrm{B} \cdot T$</text>
 </page>
 </ipe>
