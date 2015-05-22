@@ -270,7 +270,7 @@ Axiale Kraft kleiner als Radiale:
 		\end{align}
 		\item Im externen Magnetfeld $\vec{B}$ führt dies zu einer Aufspaltung der Energieniveaus:
 		\begin{align}
-		\Delta E = \mu_\mathrm{B} \, g_J \, m_J \, B
+		\Delta E = g_J \, \mu_\mathrm{B} \, m_J \, B
 		\end{align}
 	\end{itemize}
 \end{frame}
@@ -286,23 +286,64 @@ Axiale Kraft kleiner als Radiale:
 
 \begin{frame}{MOT}
 	\begin{itemize}
+		\item Dämpfungskraft \& Rückstellkraft i.e. gedämpfter harmonischer Oszillator
 		\item Magnetfeld
 		\item typischer Versuchsablauf: MOT beladen durch atomischen Strahl (Zeeman-Slower), MOT wird abgeschaltet damit durch optische Melasse gekühlt wird (Zeeman-Effekt hat negativen Einfluss auf Dopplerkühlung)
 		\item In einer gefüllten Falle kommt es zur ständigen Streuung des Laserlichts, was mit dem Auge/CCD sichtbar ist
 		\item Gebraucht zum Laden von Dipolfallen/Magnetfallen
 		\item typisches Magnetfeld \SI{0.1}{\tesla\per\metre}
+		\begin{align}
+		\vec{B} = B \cdot \begin{pmatrix}
+		x \\ y \\ -2z
+		\end{pmatrix}
+		\end{align}
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Dipol-Falle (opt. Pinzette) (?)}
+\begin{frame}{MOT}
+\begin{columns}
+\column{0.5\textwidth}
+
+\column{0.5\textwidth}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.95\textwidth]{./figures/mot_columbia.jpg}
+		\caption{Magneto optische Falle \cite{columbia}}
+	\end{figure}
+\end{columns}
 \end{frame}
 
 
 \section{Magnetfalle}
 
 \begin{frame}{Magnetfalle}
+
+\begin{itemize}
+	\item Betrachte Atom als Ganzes im Zustand $\ket{I J F m_F}$
+	\item Zeeman-Energie: $V = g_F \mu_\mathrm{B} m_F B$
+%	\item Nur vom Betrag des Magnetfeldes abhängig, da der Dipol stets mit dem Magnetfeld ausgerichtet ist. (Warum nicht bei MOT?)
+\end{itemize}
+
 typische Fallentiefe: \SI{0.07}{\kelvin}
-Majorana Übergang!
+geringer Energieabstand der Zustände im Potentialminimum führen zur Vermischung der Zustände, was zur folge hat, dass manche Atome in einen nicht durch das Magnetfeld gebundenen Zustand übergehen.
+Magnetfalle in Halbleiterform (s. engl. wiki)
+\end{frame}
+
+\begin{frame}{Magnetfalle}
+	\begin{columns}
+	\column{0.5\textwidth}
+	\begin{itemize}
+		\item Starkfeldsucher: $g_F m_F < 0$
+		\item Schwachfeldsucher: $g_F m_F > 0$
+		\item Zum Fangen Min. oder Max. von $|\vec{B}|$ benötigt.
+		\item Maximum nicht Möglich wg. $\divergence \vec{B} = 0$
+	\end{itemize}
+	\column{0.5\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics{./figures/magnetfalle.pdf}
+		\end{figure}
+	\end{columns}
 \end{frame}
 
 
@@ -343,6 +384,12 @@ Majorana Übergang!
 		Carl E. Wieman, David E. Pritchard, David J. Wineland,
 		\emph{Atom cooling, trapping, and quantum manipulation},
 		Reviews of Modern Physics, Vol. 71, No.2 1999
+		
+		\bibitem{columbia}
+		Columbia University: Department of Physics,
+		\url{http://physics.columbia.edu/research/atomic-molecular-optical-physics},
+		(Letzter Aufruf 22. Mai 2015)
+		
 		
 	\end{thebibliography}
 	
