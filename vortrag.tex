@@ -132,7 +132,6 @@ Proseminar Präsentationstechnik SS15}
 \end{frame}
 
 
-
 \begin{frame}{Earnshaw-Theorem}
 	Quellenfreiheit im ladungsfreien Raum:
 	\begin{align}
@@ -145,26 +144,19 @@ Proseminar Präsentationstechnik SS15}
 \end{frame}
 
 
-
 \begin{frame}{Lineare Paul-Falle ($x$-$y$-Ebene)}
-	\begin{columns}[t]
-		\column{0.5\textwidth}
-		Quadrupol:
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=0.8\textwidth]{./figures/lineare_paulfalle_xy_statisch.pdf}
-		\end{figure}
-		
-		\column{0.5\textwidth}
-		Quadrupol-Potential:
-		\begin{align}
-		\phi = \phi_0 + \frac{U_0}{2 \, r_0^2} (x^2-y^2)
-		\end{align}
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=0.95\textwidth]{./figures/sattelpotential.pdf}
-		\end{figure}
-	\end{columns}
+	Verwendung eines Quadrupolfeldes mit el. Potential:
+	\begin{align}
+	\phi = \phi_0 + \frac{U_0}{2 \, r_0^2} (x^2-y^2)
+	\end{align}
+	\begin{minipage}[c]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.8\textwidth]{./figures/lineare_paulfalle_xy_statisch.pdf}
+	\end{minipage}%
+	\begin{minipage}[c]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{./figures/sattelpotential.pdf}
+	\end{minipage}
 \end{frame}
 
 %\begin{frame}{Lineare Paul-Falle ($x$-$y$-Ebene)}
@@ -189,42 +181,51 @@ Proseminar Präsentationstechnik SS15}
 %\end{frame}
 
 \begin{frame}{Lineare Paul-Falle ($x$-$y$-Ebene)}
-	Nutze Trägheit des Teilchens und verwende zeitlich variierendes Potential:
-	\begin{align}
+	\begin{itemize}
+		\item Ausnutzung des Trägheit des Teilchens im zeitlich variierten el. Potential:
+		\begin{align}
 		\phi = \phi_0 + \frac{U_0}{2 \, r_0} \cos(\Omega t) \, (x^2-y^2)
-	\end{align}
-	Typische Frequenzen im Radiobereich $\nu = \mathcal{O}(\SI{10}{MHz})$
-	
-	Stabilität der Falle ist sehr sensitiv auf Ladung der Teilchen, RF-Frequenz, Feldeigenschaften und \textbf{Masse} der Teilchen
+		\end{align}
+		
+		\item typische Frequenz $\nu \sim \SI{10}{MHz}$ (Radiofrequenz)
+		
+		\item Stabilität sensitiv auf Feldkonfiguration des Quadrupols sowie Ladung und Masse des Teilchens
+		\begin{itemize}
+			\item Massenspektrometrie möglich
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Lineare Paul-Falle (Erweiterung auf die $z$-Achse)}
 	\begin{columns}[t]
-		\column{0.6\textwidth}
-		\begin{itemize}
-			\item 1
-			\item 2
-		\end{itemize}
-		\column{0.4\textwidth}
+		\column{0.5\textwidth}
+		
+		\column{0.5\textwidth}
 			\begin{figure}[h]
 				\centering
-				\includegraphics[width = 1\textwidth]{./figures/lineare_paulfalle.pdf}
+				\includegraphics[width=0.8\textwidth]{./figures/lineare_paulfalle.pdf}
 			\end{figure}
 	\end{columns}
-
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{./figures/29_laser_cooled_ion_chain.jpg}
+		\caption{29 lasergekühlte Thorium-Atome ($\mathrm{Th}^{3+}$) in einer linearen Paul-Falle (Abstand etwa \SI{50}{\micro\metre}) \cite{campbell}}
+	\end{figure}
+	
 \end{frame}
 
-\begin{frame}{Lineare Paul-Falle}
-Axiale Kraft kleiner als Radiale:
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.9\textwidth]{./figures/29_laser_cooled_ion_chain.jpg}
-	\caption{29 lasergekühlte Thorium-Atome ($\mathrm{Th}^{3+}$) in einer linearen Paul-Falle (Abstand etwa \SI{50}{\micro\metre}) \cite{campbell}}
-\end{figure}
-
-(Penning-Falle?)
-
-\end{frame}
+%\begin{frame}{Lineare Paul-Falle}
+%Axiale Kraft kleiner als Radiale:
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=0.9\textwidth]{./figures/29_laser_cooled_ion_chain.jpg}
+%	\caption{29 lasergekühlte Thorium-Atome ($\mathrm{Th}^{3+}$) in einer linearen Paul-Falle (Abstand etwa \SI{50}{\micro\metre}) \cite{campbell}}
+%\end{figure}
+%
+%(Penning-Falle?)
+%
+%\end{frame}
 
 \section{Optische Fallen}
 
