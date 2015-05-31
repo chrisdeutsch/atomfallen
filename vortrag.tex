@@ -1,4 +1,4 @@
-\documentclass[12pt]{beamer}
+\documentclass[12pt,xcolor=dvipsnames]{beamer}
 
 % Pakete
 \usepackage[utf8]{inputenc}
@@ -11,6 +11,8 @@
 
 \usepackage{braket}
 
+\usepackage{multirow}
+
 % Einheiten
 \usepackage{siunitx}
 \sisetup{
@@ -20,6 +22,7 @@
 
 % Grafiken
 \usepackage{graphicx}
+\usepackage{tabularx}
 
 
 % Theme
@@ -44,7 +47,7 @@
 {Atomfallen}
 
 \subtitle
-{Überblick über die Funktionsweise der wichtigsten Fallen}
+{Ein Überblick der wichtigsten Fallen}
 %\logo{}
 
 \institute[]
@@ -347,20 +350,24 @@ Magnetfalle in Halbleiterform (s. engl. wiki)
 \end{frame}
 
 
-\section{Vergleich}
+\section{Vergleich der Fallen}
 
-\begin{frame}{Fallentiefen}
-	\begin{table}
-	\begin{tabular}{l | c | c | c }
+\begin{frame}{Vergleich der Fallen}
+	
+	\resizebox{\textwidth}{!}{
+	{\def\arraystretch{1.5}\tabcolsep=5pt
+	\begin{tabular}{l | p{4cm} | p{4cm} | p{4cm} }
 		& Paul-Falle & MOT & Magnetfalle \\
 		\hline
-		Fallentiefe & \SI{1}{K} & \SI{1}{K} & \SI{1}{K} \\
-		Vorteile & & & \\
-		Nachteile & & & \\
-		Lebenszeit & & & \\
-	\end{tabular}
-	\end{table}
-
+		typ. Fallentiefen: & $\sim \SI{1e6}{K}$ & $\sim \SI{1}{K}$ & $\sim \SI{10}{mK}$\\
+		min. Temperatur: & $\sim \SI{1}{mK}$ & $\sim \SI{100}{\micro\kelvin}$ & $\sim \SI{10}{nK}$ \\
+		&&&\\
+		Vor- / Nachteile: & \textcolor{Red}{nur Ionen} & \textcolor{Green}{neutrale Atome} & \textcolor{Green}{neutrale Atome}\\
+		& \textcolor{Green}{zustandsunabhängig} & \textcolor{Red}{zustandsabhängig} & \textcolor{Red}{zustandsabhängig}\\
+		& & \textcolor{Green}{Kühlung durch Melasse} &\textcolor{Green}{keine untere Grenze}\\
+		& \textcolor{Green}{Ionisation direkt in der Falle} & \textcolor{Green}{Einfangen von Atomen bei Raumtemperatur} & \textcolor{Red}{vorangehende Kühlstufe benötigt} \\
+	\end{tabular}}}
+	
 \end{frame}
 
 \begin{frame}{Vielen Dank für die Aufmerksamkeit}
