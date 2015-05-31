@@ -120,36 +120,31 @@ Proseminar Präsentationstechnik SS15}
 
 \begin{frame}{Grundlagen der Ionenfallen}
 	\begin{itemize}
-		\item Kraft auf geladene Teilchen groß (EM-WW ist stark)
-		\item Große Fallentiefen (Keine Kühlung nötig) Teilchen können direkt in der Falle ionisiert werden
-		\item typische Fallentiefen: $\SI{6e6}{\kelvin}$ bei Betriebsspannung \SI{500}{V}
+		\item Ausnutzung der Kraft auf geladene Teilchen im elektromagnetischen Feld
+			\begin{itemize}
+				\item Kraft auf freie Ladungsträger ist groß (vgl. mit Dipol/Streukraft)
+				
+				\item Fallenspannungen $\sim \SI{100}{V}$ ermöglichen Fallentiefen der Größenordnung $\sim \text{10}^\text{6} \si{K}$
+			\end{itemize}
+		
+		\item \alert{Problem:} Earnshaw-Theorem verbietet Fangen von geladenen Teilchen durch statische Felder
 	\end{itemize}
 \end{frame}
 
 
 
-\begin{frame}
-	1. Maxwell-Gleichung für den ladungsfreien Raum (Quellenfreiheit):
+\begin{frame}{Earnshaw-Theorem}
+	Quellenfreiheit im ladungsfreien Raum:
 	\begin{align}
 	\divergence \vec{E} = 0
 	\end{align}
-	\begin{align}
-	\int_{V} \divergence \vec{E} \, \mathrm{d}V = \oint_{S = \partial V} \vec{E} \cdot \vec{n} \, \mathrm{d}S = 0
-	\end{align}
-	
-
-\end{frame}
-
-\begin{frame}
-	Fangen eines positiven Ions in einem Raumvolumen: $\vec{E} \cdot \vec{n} \stackrel{!}{<} 0$
 	\begin{figure}
 		\centering
-		\includegraphics*[width=0.5\textwidth]{./figures/earnshaw.pdf}
+		\includegraphics[width=0.60\textwidth]{./figures/earnshaw.pdf}
 	\end{figure}
-		\begin{block}{Earnshaw-Theorem:}
-			Ein geladenes Teilchen kann nicht durch elektrostatische Kräfte in einem Raumvolumen gefangen werden.
-		\end{block}
 \end{frame}
+
+
 
 \begin{frame}{Lineare Paul-Falle ($x$-$y$-Ebene)}
 	\begin{columns}[t]

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20150519101853" modified="D:20150519111659"/>
+<ipe version="70005" creator="Ipe 7.1.5">
+<info created="D:20150519101853" modified="D:20150531192136"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -346,8 +346,6 @@ h
 </path>
 <text matrix="1 0 0 1 4 -4" transformations="translations" pos="112 760" stroke="black" type="label" width="7.929" height="9.636" depth="0" valign="baseline">$\vec{E}$</text>
 <text matrix="1 0 0 1 108 -4" transformations="translations" pos="112 760" stroke="black" type="label" width="7.929" height="9.636" depth="0" valign="baseline">$\vec{E}$</text>
-<text transformations="translations" pos="192 772" stroke="black" type="label" width="13.868" height="6.918" depth="0" valign="baseline">$\partial V$</text>
-<text matrix="1 0 0 1 104 0" transformations="translations" pos="192 772" stroke="black" type="label" width="13.868" height="6.918" depth="0" valign="baseline">$\partial V$</text>
 <text matrix="1 0 0 1 16 -4" transformations="translations" pos="144 684" stroke="black" type="label" width="41.552" height="9.636" depth="0.39" halign="center" valign="baseline">$\mathrm{div} \, \vec{E} &lt; 0$</text>
 <text matrix="1 0 0 1 120 -4" transformations="translations" pos="144 684" stroke="black" type="label" width="41.552" height="9.636" depth="0" halign="center" valign="baseline">$\mathrm{div} \, \vec{E} = 0$</text>
 </page>
