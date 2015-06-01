@@ -138,13 +138,17 @@ Proseminar Präsentationstechnik SS15}
 
 
 \begin{frame}{Lineare Paul-Falle ($x$-$y$-Ebene)}
-	Verwendung eines Quadrupolfeldes mit el. Potential:
-	\begin{align*}
-	\phi = \phi_0 + \frac{U_0}{2 \, r_0^2} (x^2-y^2)
-	\end{align*}
+	\begin{itemize}
+		\item Ausnutzung der Trägheit des Ions im Quadrupol-Wechselfeld
+		\begin{itemize}
+			\item Basierend auf dem Prinzip der starken Fokussierung der Beschleunigerphysik (1952 Paul Planung \SI{500}{MeV}-Synchrotron)
+		\end{itemize}
+	\end{itemize}
+	
+	
 	\begin{minipage}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=0.8\textwidth]{./figures/lineare_paulfalle_xy_statisch.pdf}
+		\includegraphics[width=0.8\textwidth]{./figures/lineare_paulfalle_xy.pdf}
 	\end{minipage}%
 	\begin{minipage}[t]{0.5\textwidth}
 		\centering
@@ -173,34 +177,23 @@ Proseminar Präsentationstechnik SS15}
 %	\end{columns}
 %\end{frame}
 
-\begin{frame}{Lineare Paul-Falle ($x$-$y$-Ebene)}
-	\begin{itemize}
-		\item Ausnutzung des Trägheit des Teilchens im zeitlich variierten el. Potential:
-		\begin{align*}
-		\phi = \phi_0 + \frac{U_0}{2 \, r_0} \cos(\Omega t) \, (x^2-y^2)
-		\end{align*}
-		
-		\item typische Frequenz $\nu \sim \SI{10}{MHz}$ (Radiofrequenz)
-		
-		\item Stabilität sensitiv auf Feldkonfiguration des Quadrupols sowie Ladung und Masse des Teilchens
-		\begin{itemize}
-			\item Massenspektrometrie möglich
-		\end{itemize}
-	\end{itemize}
-\end{frame}
-
 \begin{frame}{Lineare Paul-Falle (Erweiterung auf die $z$-Achse)}
 	\begin{columns}[t]
 		\column{0.5\textwidth}
 		\begin{itemize}
-			\item Testpunkt
+				\item dreidimensionales Fangen durch Endkappenelektroden
+				
+				\item Stabilität abhängig von Feld- und Teilcheneigenschaften
+				\begin{itemize}
+					\item Massenspektrometrie möglich
+				\end{itemize}
 		\end{itemize}
 		
-		\column{0.5\textwidth}
+		\column{0.4\textwidth}
 			\vspace{-0.4cm}
 			\begin{figure}[h]
 				\centering
-				\includegraphics[width=0.8\textwidth]{./figures/lineare_paulfalle.pdf}
+				\includegraphics[width=1\textwidth]{./figures/lineare_paulfalle.pdf}
 			\end{figure}
 	\end{columns}
 	
@@ -228,28 +221,25 @@ Proseminar Präsentationstechnik SS15}
 
 \section{Optische Fallen}
 
-\begin{frame}{Einleitung}
-	\begin{itemize}
-		\item Fangen von neutralen Atomen
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{Grundlagen: Streukraft}
+\begin{frame}{Streukraft}
 	\begin{columns}[t]
 		\column{0.5\textwidth}
 		\begin{itemize}
 			\item Photonenimpuls:
 			\begin{align*}
-			p = \frac{E}{c}
+				p = \frac{E}{c}
 			\end{align*}
-			\item Absorption
-			\item spontante Emission (Isotrop)
-			\item mittlere (bremsende) Kraft
+			\item Impulsübertrag durch Absorption
+			
+			\item isotrope Emission
+			
+			\item[$\Rightarrow$] im statistischen Mittel: Kraft in Laserrichtung
 		\end{itemize}
 		
 		\column{0.5\textwidth}
 		\begin{figure}[h]
 			\centering
+			\vspace{-1cm}
 			\includegraphics[width=1.0\textwidth]{./figures/streukraft.pdf}
 		\end{figure}
 		
@@ -264,56 +254,32 @@ Proseminar Präsentationstechnik SS15}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Grundlagen: Feinstruktur und Zeeman-Aufspaltung}
-	\begin{itemize}
-		\item Ein Atom hat ein magnetisches Dipolmoment $\vec{\mu}$ aufgrund des Gesamtdrehimpulses $\vec{J}$ (Zusammengesetzt aus Bahndrehimpuls $\vec{L}$ und Spin $\vec{S}$).
-		\begin{align*}
-		\vec{\mu} = - \frac{\mu_\mathrm{B} g_J \vec{J}}{\hbar} \quad \text{unnötig}
-		\end{align*}
-		\item Die potentielle Energie eines magnetischen Dipols im homogenen Magnetfeld ist gegeben durch:
-		\begin{align*}
-		V = - \vec{\mu} \cdot \vec{B}
-		\end{align*}
-		\item Im externen Magnetfeld $\vec{B}$ führt dies zu einer Aufspaltung der Energieniveaus:
-		\begin{align*}
-		\Delta E = g_J \, \mu_\mathrm{B} \, m_J \, B
-		\end{align*}
-	\end{itemize}
-\end{frame}
-
 \begin{frame}{Magneto-optische Falle}
-\SI{1}{K} tief
+\begin{itemize}
+	\item Zeeman-Effekt: $\Delta E = g_J \, \mu_\mathrm{B} \, m_J \, B$
+\end{itemize}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{./figures/mot.pdf}
+	\includegraphics[width=1\textwidth]{./figures/mot.pdf}
 \end{figure}
-\end{frame}
-
-\begin{frame}{MOT}
-	\begin{itemize}
-		\item Dämpfungskraft \& Rückstellkraft i.e. gedämpfter harmonischer Oszillator
-		\item Magnetfeld
-		\item typischer Versuchsablauf: MOT beladen durch atomischen Strahl (Zeeman-Slower), MOT wird abgeschaltet damit durch optische Melasse gekühlt wird (Zeeman-Effekt hat negativen Einfluss auf Dopplerkühlung)
-		\item In einer gefüllten Falle kommt es zur ständigen Streuung des Laserlichts, was mit dem Auge/CCD sichtbar ist
-		\item Gebraucht zum Laden von Dipolfallen/Magnetfallen
-		\item typisches Magnetfeld \SI{0.1}{\tesla\per\metre}
-		\begin{align*}
-		\vec{B} = B \cdot \begin{pmatrix}
-		x \\ y \\ -2z
-		\end{pmatrix}
-		\end{align*}
-	\end{itemize}
 \end{frame}
 
 \begin{frame}{MOT}
 \begin{columns}
 \column{0.5\textwidth}
+\begin{itemize}
+
+	\item Magnetfeldgradient durch Anti-Helmholtzspulenpaar
+		
+	\item drei Paare gegenläufiger Laser entsprechender Polarisation
+
+\end{itemize}
 
 \column{0.5\textwidth}
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.95\textwidth]{./figures/mot_columbia.jpg}
+		\includegraphics[width=0.9\textwidth]{./figures/mot_columbia.jpg}
 		\caption{Magneto optische Falle \cite{columbia}}
 	\end{figure}
 \end{columns}
@@ -409,17 +375,6 @@ Magnetfalle in Halbleiterform (s. engl. wiki)
 	\begin{figure}
 		\includegraphics[width=0.5\textwidth]{./figures/ionenkristall.png}
 		\caption{Ionenkristall aus lasergekühlten Berylliumatomen in einer Penning-Falle \cite{wpw}}
-	\end{figure}
-\end{frame}
-
-\begin{frame}{Earnshaw-Theorem}
-	Quellenfreiheit im ladungsfreien Raum:
-	\begin{align*}
-	\divergence \vec{E} = 0
-	\end{align*}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.6\textwidth]{./figures/earnshaw.pdf}
 	\end{figure}
 \end{frame}
 
