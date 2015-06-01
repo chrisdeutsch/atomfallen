@@ -30,6 +30,8 @@
 \usecolortheme{rose}
 \useoutertheme{infolines}
 \useinnertheme{rectangles}
+\setbeamertemplate{itemize subitem}[triangle]
+
 \usefonttheme[onlymath]{serif}
 
 % [num] Zitationen
@@ -91,11 +93,11 @@ Proseminar Präsentationstechnik SS15}
 				\includegraphics[width=0.6\textwidth]{./figures/fallentiefe.pdf}
 			\end{figure}
 		\item Energie wird charakterisiert durch Temperatur:
-		\begin{align}
+		\begin{align*}
 		E = k_\mathrm{B} \cdot T
-		\end{align}
+		\end{align*}
 		
-		\item \korr{Atomfallen und Kühlung gehen Hand in Hand}
+		\item Kühlung und Atomfallen stehen in ständiger \korr{Korrelation}
 		
 	\end{itemize}
 
@@ -122,38 +124,29 @@ Proseminar Präsentationstechnik SS15}
 	\begin{itemize}
 		\item Ausnutzung der Kraft auf geladene Teilchen im elektromagnetischen Feld
 			\begin{itemize}
-				\item Kraft auf freie Ladungsträger ist groß (vgl. mit Dipol/Streukraft)
-				
-				\item Fallenspannungen $\sim \SI{100}{V}$ ermöglichen Fallentiefen der Größenordnung $\sim \text{10}^\text{6} \si{K}$
+				\item Kraft auf freie Ladungsträger ist groß (vgl. mit Dipol/Streukraft) ($10^6 \si{K}$)
 			\end{itemize}
 		
-		\item \alert{Problem:} Earnshaw-Theorem verbietet Fangen von geladenen Teilchen durch statische Felder
-	\end{itemize}
-\end{frame}
-
-
-\begin{frame}{Earnshaw-Theorem}
-	Quellenfreiheit im ladungsfreien Raum:
-	\begin{align}
-	\divergence \vec{E} = 0
-	\end{align}
-	\begin{figure}
+		\item \alert{Problem:} Maxwell-Gleichungen verbieten Fangen von geladenen Teilchen durch elektrostatische Felder (Earnshaw-Theorem)
+		
+		\vspace{0.5cm}
 		\centering
-		\includegraphics[width=0.6\textwidth]{./figures/earnshaw.pdf}
-	\end{figure}
+		\includegraphics[width=0.55\textwidth]{./figures/earnshaw.pdf}
+		
+	\end{itemize}
 \end{frame}
 
 
 \begin{frame}{Lineare Paul-Falle ($x$-$y$-Ebene)}
 	Verwendung eines Quadrupolfeldes mit el. Potential:
-	\begin{align}
+	\begin{align*}
 	\phi = \phi_0 + \frac{U_0}{2 \, r_0^2} (x^2-y^2)
-	\end{align}
-	\begin{minipage}[c]{0.5\textwidth}
+	\end{align*}
+	\begin{minipage}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.8\textwidth]{./figures/lineare_paulfalle_xy_statisch.pdf}
 	\end{minipage}%
-	\begin{minipage}[c]{0.5\textwidth}
+	\begin{minipage}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.95\textwidth]{./figures/sattelpotential.pdf}
 	\end{minipage}
@@ -183,9 +176,9 @@ Proseminar Präsentationstechnik SS15}
 \begin{frame}{Lineare Paul-Falle ($x$-$y$-Ebene)}
 	\begin{itemize}
 		\item Ausnutzung des Trägheit des Teilchens im zeitlich variierten el. Potential:
-		\begin{align}
+		\begin{align*}
 		\phi = \phi_0 + \frac{U_0}{2 \, r_0} \cos(\Omega t) \, (x^2-y^2)
-		\end{align}
+		\end{align*}
 		
 		\item typische Frequenz $\nu \sim \SI{10}{MHz}$ (Radiofrequenz)
 		
@@ -199,18 +192,24 @@ Proseminar Präsentationstechnik SS15}
 \begin{frame}{Lineare Paul-Falle (Erweiterung auf die $z$-Achse)}
 	\begin{columns}[t]
 		\column{0.5\textwidth}
+		\begin{itemize}
+			\item Testpunkt
+		\end{itemize}
 		
 		\column{0.5\textwidth}
+			\vspace{-0.4cm}
 			\begin{figure}[h]
 				\centering
 				\includegraphics[width=0.8\textwidth]{./figures/lineare_paulfalle.pdf}
 			\end{figure}
 	\end{columns}
 	
+	\vspace{0.2cm}
+		
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.8\textwidth]{./figures/29_laser_cooled_ion_chain.jpg}
-		\caption{29 lasergekühlte Thorium-Atome ($\mathrm{Th}^{3+}$) in einer linearen Paul-Falle (Abstand etwa \SI{50}{\micro\metre}) \cite{campbell}}
+		\caption{Lasergekühlte Thorium-Atome ($\mathrm{Th}^{3+}$) in einer linearen Paul-Falle (Abstand etwa \SI{50}{\micro\metre}) \cite{campbell}}
 	\end{figure}
 	
 \end{frame}
@@ -240,9 +239,9 @@ Proseminar Präsentationstechnik SS15}
 		\column{0.5\textwidth}
 		\begin{itemize}
 			\item Photonenimpuls:
-			\begin{align}
+			\begin{align*}
 			p = \frac{E}{c}
-			\end{align}
+			\end{align*}
 			\item Absorption
 			\item spontante Emission (Isotrop)
 			\item mittlere (bremsende) Kraft
@@ -268,17 +267,17 @@ Proseminar Präsentationstechnik SS15}
 \begin{frame}{Grundlagen: Feinstruktur und Zeeman-Aufspaltung}
 	\begin{itemize}
 		\item Ein Atom hat ein magnetisches Dipolmoment $\vec{\mu}$ aufgrund des Gesamtdrehimpulses $\vec{J}$ (Zusammengesetzt aus Bahndrehimpuls $\vec{L}$ und Spin $\vec{S}$).
-		\begin{align}
+		\begin{align*}
 		\vec{\mu} = - \frac{\mu_\mathrm{B} g_J \vec{J}}{\hbar} \quad \text{unnötig}
-		\end{align}
+		\end{align*}
 		\item Die potentielle Energie eines magnetischen Dipols im homogenen Magnetfeld ist gegeben durch:
-		\begin{align}
+		\begin{align*}
 		V = - \vec{\mu} \cdot \vec{B}
-		\end{align}
+		\end{align*}
 		\item Im externen Magnetfeld $\vec{B}$ führt dies zu einer Aufspaltung der Energieniveaus:
-		\begin{align}
+		\begin{align*}
 		\Delta E = g_J \, \mu_\mathrm{B} \, m_J \, B
-		\end{align}
+		\end{align*}
 	\end{itemize}
 \end{frame}
 
@@ -299,11 +298,11 @@ Proseminar Präsentationstechnik SS15}
 		\item In einer gefüllten Falle kommt es zur ständigen Streuung des Laserlichts, was mit dem Auge/CCD sichtbar ist
 		\item Gebraucht zum Laden von Dipolfallen/Magnetfallen
 		\item typisches Magnetfeld \SI{0.1}{\tesla\per\metre}
-		\begin{align}
+		\begin{align*}
 		\vec{B} = B \cdot \begin{pmatrix}
 		x \\ y \\ -2z
 		\end{pmatrix}
-		\end{align}
+		\end{align*}
 	\end{itemize}
 \end{frame}
 
@@ -410,6 +409,17 @@ Magnetfalle in Halbleiterform (s. engl. wiki)
 	\begin{figure}
 		\includegraphics[width=0.5\textwidth]{./figures/ionenkristall.png}
 		\caption{Ionenkristall aus lasergekühlten Berylliumatomen in einer Penning-Falle \cite{wpw}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Earnshaw-Theorem}
+	Quellenfreiheit im ladungsfreien Raum:
+	\begin{align*}
+	\divergence \vec{E} = 0
+	\end{align*}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.6\textwidth]{./figures/earnshaw.pdf}
 	\end{figure}
 \end{frame}
 
