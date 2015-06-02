@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20150520154016" modified="D:20150602115019"/>
+<ipe version="70005" creator="Ipe 7.1.5">
+<info created="D:20150520154016" modified="D:20150602224555"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -202,13 +202,13 @@ h
 <dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
 <dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
 <textsize name="large" value="\large"/>
-<textsize name="small" value="\small"/>
-<textsize name="tiny" value="\tiny"/>
 <textsize name="Large" value="\Large"/>
 <textsize name="LARGE" value="\LARGE"/>
 <textsize name="huge" value="\huge"/>
 <textsize name="Huge" value="\Huge"/>
+<textsize name="small" value="\small"/>
 <textsize name="footnote" value="\footnotesize"/>
+<textsize name="tiny" value="\tiny"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
 <textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
 <textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
@@ -492,15 +492,15 @@ $</text>
 196 644 l
 </path>
 <text matrix="1 0 0 1 84 -4" transformations="translations" pos="192 648" stroke="red" type="label" width="12.775" height="7.933" depth="0" valign="baseline">$\sigma^-$</text>
-<path stroke="black" rarrow="normal/tiny">
+<path matrix="1 0 0 1 4 0" stroke="black" rarrow="normal/tiny">
 244 682.667 m
 244 648 l
 </path>
-<path stroke="black" arrow="normal/tiny">
+<path matrix="1 0 0 1 4 0" stroke="black" arrow="normal/tiny">
 244 640 m
 244 608 l
 </path>
-<text transformations="translations" pos="244 644" stroke="black" type="label" width="5.551" height="3.432" depth="0" halign="center" valign="center" size="footnote">$\omega$</text>
+<text matrix="1 0 0 1 4 0" transformations="translations" pos="244 644" stroke="black" type="label" width="10.431" height="5.535" depth="0" halign="center" valign="center" size="footnote">$\hbar \omega$</text>
 <use name="mark/disk(sx)" pos="160 608" size="normal" stroke="gray"/>
 <use name="mark/disk(sx)" pos="320 608" size="normal" stroke="gray"/>
 <path stroke="black" fill="white" arrow="normal/tiny">
