@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.5">
-<info created="D:20150520154016" modified="D:20150601221158"/>
+<ipe version="70005" creator="Ipe 7.1.4">
+<info created="D:20150520154016" modified="D:20150602115019"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -202,13 +202,13 @@ h
 <dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
 <dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
 <textsize name="large" value="\large"/>
+<textsize name="small" value="\small"/>
+<textsize name="tiny" value="\tiny"/>
 <textsize name="Large" value="\Large"/>
 <textsize name="LARGE" value="\LARGE"/>
 <textsize name="huge" value="\huge"/>
 <textsize name="Huge" value="\Huge"/>
-<textsize name="small" value="\small"/>
 <textsize name="footnote" value="\footnotesize"/>
-<textsize name="tiny" value="\tiny"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
 <textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
 <textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
@@ -514,5 +514,10 @@ $</text>
 <text matrix="1 0 0 1 0 4" transformations="translations" pos="184 596" stroke="black" type="label" width="6.535" height="5.446" depth="0" halign="center" valign="top" size="footnote">$F$</text>
 <text matrix="1 0 0 1 112 4" transformations="translations" pos="184 596" stroke="black" type="label" width="6.535" height="5.446" depth="0" halign="center" valign="top" size="footnote">$F$</text>
 <text transformations="translations" pos="240 604" stroke="black" type="label" width="4.234" height="5.136" depth="0" halign="center" valign="center" size="footnote">$0$</text>
+<path matrix="1 0 0 1 32 140" stroke="black" arrow="normal/normal">
+216 596 m
+264 596 l
+</path>
+<text matrix="1 0 0 1 -4 0" transformations="translations" pos="296 740" stroke="black" type="label" width="8.057" height="6.808" depth="0" valign="baseline">$B$</text>
 </page>
 </ipe>
