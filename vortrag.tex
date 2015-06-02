@@ -256,7 +256,7 @@ Proseminar Präsentationstechnik SS15}
 
 \begin{frame}{Magneto-optische Falle}
 \begin{itemize}
-	\item Zeeman-Effekt: $\Delta E = g_J \, \mu_\mathrm{B} \, m_J \, B$ \korr{Magnetfeld klarmachen}
+	\item Zeeman-Effekt: $\Delta E = g_J \mu_\mathrm{B} m_J B$ \korr{Magnetfeld klarmachen}
 \end{itemize}
 
 \vspace{0.5cm}
@@ -282,7 +282,7 @@ Proseminar Präsentationstechnik SS15}
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.9\textwidth]{./figures/mot_columbia.jpg}
-		\caption{Magneto optische Falle \cite{columbia}}
+		\caption{Magneto-optische Falle \cite{columbia}}
 	\end{figure}
 \end{columns}
 \end{frame}
@@ -291,26 +291,21 @@ Proseminar Präsentationstechnik SS15}
 \section{Magnetfalle}
 
 \begin{frame}{Magnetfalle}
-
-\begin{itemize}
-	\item Betrachte Atom als Ganzes im Zustand $\ket{I J F m_F}$
-	\item Zeeman-Energie: $V = g_F \mu_\mathrm{B} m_F B$
-%	\item Nur vom Betrag des Magnetfeldes abhängig, da der Dipol stets mit dem Magnetfeld ausgerichtet ist. (Warum nicht bei MOT?)
-\end{itemize}
-
-typische Fallentiefe: \SI{0.07}{\kelvin}
-geringer Energieabstand der Zustände im Potentialminimum führen zur Vermischung der Zustände, was zur folge hat, dass manche Atome in einen nicht durch das Magnetfeld gebundenen Zustand übergehen.
-Magnetfalle in Halbleiterform (s. engl. wiki)
-\end{frame}
-
-\begin{frame}{Magnetfalle}
 	\begin{columns}
 	\column{0.5\textwidth}
 	\begin{itemize}
-		\item Starkfeldsucher: $g_F m_F < 0$
-		\item Schwachfeldsucher: $g_F m_F > 0$
-		\item Zum Fangen Min. oder Max. von $|\vec{B}|$ benötigt.
-		\item Maximum nicht Möglich wg. $\divergence \vec{B} = 0$
+		\item Zeeman-Energie des Atoms im Zustand $\ket{I J F m_F}$:
+		\begin{align*}
+			E = g_F \mu_\mathrm{B} m_F B
+		\end{align*}
+		
+		\item \textcolor{red}{Schwachfeldsucher:} $g_F m_F > 0$
+		
+		\item \textcolor{blue}{Starkfeldsucher:} \\$g_F m_F < 0$
+		
+		\item Min. oder Max. von $|\vec{B}|$ benötigt um Atom zu fangen
+		
+		\item kein Maximum möglich, da $\divergence \vec{B} = 0$
 	\end{itemize}
 	\column{0.5\textwidth}
 		\begin{figure}
