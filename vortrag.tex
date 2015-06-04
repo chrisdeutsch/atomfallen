@@ -61,6 +61,15 @@ Proseminar Präsentationstechnik SS15}
 %\setbeamercovered{transparent}
 %\setbeamertemplate{navigation symbols}{}
 
+\newcommand{\beginbackup}{
+	\newcounter{framenumbervorappendix}
+	\setcounter{framenumbervorappendix}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+	\addtocounter{framenumbervorappendix}{-\value{framenumber}}
+	\addtocounter{framenumber}{\value{framenumbervorappendix}} 
+}
+
 \begin{document}
 \maketitle
 
@@ -266,13 +275,11 @@ Proseminar Präsentationstechnik SS15}
 \begin{frame}{Magneto-optische Falle}
 \begin{columns}
 \column{0.5\textwidth}
-\begin{itemize}
-
-	\item Magnetfeldgradient durch Anti-Helmholtzspulenpaar
-		
-	\item drei Paare gegenläufiger Laser entsprechender Polarisation
-
-\end{itemize}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\textwidth]{./figures/mot_3d.png}
+		\caption{\cite{foot}}
+	\end{figure}
 
 \column{0.5\textwidth}
 	\begin{figure}
@@ -282,35 +289,6 @@ Proseminar Präsentationstechnik SS15}
 	\end{figure}
 \end{columns}
 \end{frame}
-
-
-\section{Magnetfalle}
-
-\begin{frame}{Magnetfalle}
-	\begin{columns}
-	\column{0.5\textwidth}
-	\begin{itemize}
-		\item Zeeman-Energie des Atoms im Zustand $\ket{I J F m_F}$:
-		\begin{align*}
-			E = g_F \mu_\mathrm{B} m_F B
-		\end{align*}
-		
-		\item \textcolor{red}{Schwachfeldsucher:} $g_F m_F > 0$
-		
-		\item \textcolor{blue}{Starkfeldsucher:} \\$g_F m_F < 0$
-		
-		\item Min. oder Max. von $|\vec{B}|$ benötigt um Atom zu fangen
-		
-		\item kein Maximum möglich, da $\divergence \vec{B} = 0$
-	\end{itemize}
-	\column{0.5\textwidth}
-		\begin{figure}
-			\centering
-			\includegraphics{./figures/magnetfalle.pdf}
-		\end{figure}
-	\end{columns}
-\end{frame}
-
 
 \section{Vergleich}
 
@@ -362,6 +340,8 @@ Proseminar Präsentationstechnik SS15}
 	
 \end{frame}
 
+\beginbackup
+
 \begin{frame}{Anhang}
 	\begin{figure}
 		\includegraphics[width=0.5\textwidth]{./figures/ionenkristall.png}
@@ -388,5 +368,32 @@ Proseminar Präsentationstechnik SS15}
 	\includegraphics[width=1\textwidth]{./figures/mot.pdf}
 \end{figure}
 \end{frame}
+
+\begin{frame}{Magnetfalle}
+	\begin{columns}
+		\column{0.5\textwidth}
+		\begin{itemize}
+			\item Zeeman-Energie des Atoms im Zustand $\ket{I J F m_F}$:
+			\begin{align*}
+			E = g_F \mu_\mathrm{B} m_F B
+			\end{align*}
+			
+			\item \textcolor{red}{Schwachfeldsucher:} $g_F m_F > 0$
+			
+			\item \textcolor{blue}{Starkfeldsucher:} \\$g_F m_F < 0$
+			
+			\item Min. oder Max. von $|\vec{B}|$ benötigt um Atom zu fangen
+			
+			\item kein Maximum möglich, da $\divergence \vec{B} = 0$
+		\end{itemize}
+		\column{0.5\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics{./figures/magnetfalle.pdf}
+		\end{figure}
+	\end{columns}
+\end{frame}
+
+\backupend
 
 \end{document}
