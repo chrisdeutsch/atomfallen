@@ -85,7 +85,7 @@ Proseminar Präsentationstechnik SS15}
 \begin{frame}{Was sind Atomfallen?}
 	\begin{itemize}
 		\setlength\itemsep{1em}
-		\item Einschluss von Atomen im Raumvolumen durch ortsabhängige Kräfte (über längere Zeit)
+		\item Einschluss von Atomen im Raumvolumen durch ortsabhängige Kräfte
 		
 		\item Fangen ohne materielle Wände:
 		\begin{itemize}
@@ -143,7 +143,7 @@ Proseminar Präsentationstechnik SS15}
 		\setlength\itemsep{1em}
 		\item Verwendung von elektromagnetischen Feldern
 			\begin{itemize}
-				\item Kraft auf freie Ladungsträger ist groß
+				\item Kraft auf Ladungsträger ist groß
 			\end{itemize}
 		
 		\item \alert{Problem:} Earnshaw-Theorem verbietet Fangen von geladenen Teilchen durch elektrostatische Felder
@@ -187,9 +187,11 @@ Proseminar Präsentationstechnik SS15}
 	\end{minipage}
 	\vspace{0.3cm}
 	\begin{itemize}
-		\item \alert{zeitl. Mittel:} rücktreibende Kraft
+		\item Ausnutzung der Trägheit des Ions
 		\begin{itemize}
-			\item Prinzip der starken Fokussierung (1952 Paul Planung \SI{500}{MeV}-Synchrotron)
+			\item Stabilitätsbedingung
+			\item im \textbf{zeitl. Mittel}: rücktreibende Kraft
+			\item Anregung von Oszillationen
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -202,10 +204,7 @@ Proseminar Präsentationstechnik SS15}
 				\setlength\itemsep{1em}
 				\item dreidimensionales Fangen durch Endkappenelektroden
 				
-				\item Stabilität abhängig von Feld- und Teilcheneigenschaften
-				\begin{itemize}
-					\item Massenspektrometrie möglich
-				\end{itemize}
+				\item Massenspektrometrie
 		\end{itemize}
 		
 		\column{0.4\textwidth}
@@ -307,19 +306,18 @@ Proseminar Präsentationstechnik SS15}
 \section{Vergleich}
 
 \begin{frame}{Vergleich der Fallen}
-	
 	\resizebox{\textwidth}{!}{
 	{\def\arraystretch{1.5}\tabcolsep=5pt
-	\begin{tabular}{l | p{4cm} | p{4cm} | p{4cm} }
-		& Paul-Falle & Magneto-optische Falle & Magnetfalle \\
+	\begin{tabular}{l | p{4cm} | p{4cm}}
+		& Paul-Falle & Magneto-optische Falle \\
 		\hline
-		typ. Fallentiefen: & $\sim \SI{1e6}{K}$ & $\sim \SI{1}{K}$ & $\sim \SI{10}{mK}$\\
-		min. Temperatur: & $\sim \SI{1}{mK}$ & $\sim \SI{100}{\micro\kelvin}$ & $\sim \SI{10}{nK}$ \\
-		&&&\\
-		Vor- / Nachteile: & \textcolor{Red}{nur Ionen} & \textcolor{Green}{neutrale Atome} & \textcolor{Green}{neutrale Atome}\\
-		& \textcolor{Green}{zustandsunabhängig} & \textcolor{Red}{zustandsabhängig} & \textcolor{Red}{zustandsabhängig}\\
-		& \textcolor{Red}{Heizeffekt aufgrund der RF} & \textcolor{Green}{Kühlung durch opt. Melasse} &\textcolor{Green}{keine Begrenzung der Mindesttemperatur}\\
-		& \textcolor{Green}{Ionisation direkt in der Falle möglich} & \textcolor{Green}{Einfangen von Atomen bei Raumtemperatur} & \textcolor{Red}{vorangehende Kühlstufe benötigt} \\
+		typ. Fallentiefen: & $\sim \SI{1e6}{K}$ & $\sim \SI{1}{K}$ \\
+		min. Temperatur: & $\sim \SI{1}{mK}$ & $\sim \SI{100}{\micro\kelvin}$ \\
+		&&\\
+		Vor- / Nachteile: & Ionen & neutrale Atome \\
+		& \textcolor{Green}{zustandsunabhängig} & \textcolor{Red}{zustandsabhängig} \\
+		& \textcolor{Red}{Heizeffekt aufgrund der RF} & \textcolor{Green}{Kühlung durch opt. Melasse} \\
+		& \textcolor{Green}{Ionisation direkt in der Falle möglich} & \textcolor{Green}{Einfangen von Atomen bei Raumtemperatur} \\
 	\end{tabular}}}
 	
 \end{frame}
@@ -405,6 +403,24 @@ Proseminar Präsentationstechnik SS15}
 	\end{columns}
 \end{frame}
 
+\begin{frame}{Vergleich der Fallen}
+	
+	\resizebox{\textwidth}{!}{
+		{\def\arraystretch{1.5}\tabcolsep=5pt
+			\begin{tabular}{l | p{4cm} | p{4cm} | p{4cm} }
+				& Paul-Falle & Magneto-optische Falle & Magnetfalle \\
+				\hline
+				typ. Fallentiefen: & $\sim \SI{1e6}{K}$ & $\sim \SI{1}{K}$ & $\sim \SI{10}{mK}$\\
+				min. Temperatur: & $\sim \SI{1}{mK}$ & $\sim \SI{100}{\micro\kelvin}$ & $\sim \SI{10}{nK}$ \\
+				&&&\\
+				Vor- / Nachteile: & \textcolor{Red}{nur Ionen} & \textcolor{Green}{neutrale Atome} & \textcolor{Green}{neutrale Atome}\\
+				& \textcolor{Green}{zustandsunabhängig} & \textcolor{Red}{zustandsabhängig} & \textcolor{Red}{zustandsabhängig}\\
+				& \textcolor{Red}{Heizeffekt aufgrund der RF} & \textcolor{Green}{Kühlung durch opt. Melasse} &\textcolor{Green}{keine Begrenzung der Mindesttemperatur}\\
+				& \textcolor{Green}{Ionisation direkt in der Falle möglich} & \textcolor{Green}{Einfangen von Atomen bei Raumtemperatur} & \textcolor{Red}{vorangehende Kühlstufe benötigt} \\
+			\end{tabular}}}
+			
+		\end{frame}
+		
 \backupend
 
 \end{document}
