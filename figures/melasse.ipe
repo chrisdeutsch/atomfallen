@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20150520144725" modified="D:20150520152001"/>
+<ipe version="70005" creator="Ipe 7.1.5">
+<info created="D:20150520144725" modified="D:20150606224043"/>
 <preamble>\usepackage{braket}</preamble>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
@@ -720,6 +720,6 @@ h
 192 784 m
 192 768 l
 </path>
-<text matrix="1 0 0 1 -8 -4" transformations="translations" pos="232 664" stroke="black" type="label" width="40.419" height="6.808" depth="0.83" valign="baseline">$F = - \alpha v$</text>
+<text matrix="1 0 0 1 -8 -4" transformations="translations" pos="232 664" stroke="black" type="label" width="40.419" height="9.636" depth="0.83" valign="baseline">$\vec{F} = - \alpha v$</text>
 </page>
 </ipe>
