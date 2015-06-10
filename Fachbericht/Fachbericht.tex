@@ -25,7 +25,7 @@
   allcolors = {black}
 }
 
-
+\DeclareMathOperator{\divergence}{div}
 
 \begin{document}
 
@@ -40,12 +40,13 @@
 
 \begin{abstract}
 %
-lineare Paul-Falle, Magneto-optische Falle (max. 150 Wörter)
+Es werden Atomfallen erklärt und deren Zweck dargestellt. Zur Erläuterung wird jeweils eine Ionenfalle (Paul-Falle) sowie eine Falle für neutrale Atome (magneto-optische Falle) vorgestellt. Anschließend folgt ein Vergleich der beiden Fallen und ihrer Parameter.
 %
 \end{abstract}
 
 \maketitle
 
+\section{Einführung}
 Viele Fortschritte der modernen Atomphysik konnte durch die Entwicklung neuer Methoden zur Isolation und Manipulation quantenmechanischer Systeme gemacht werden.
 Solche Methoden umfassen unter anderem das Fangen von Atomen in sog.~Atomfallen, aber auch das Kühlen dieser Teilchen durch Laserkühlen.
 Atomfallen dienen dem Einschluss von Atomen in einem endlichen Raumvolumen über längere Zeit, durch ortsabhängige Kräfte.
@@ -70,11 +71,31 @@ Wichtige Anwendungen:
 	\item Manipulation quantenmechanischer Systeme einzelner Teilchen
 \end{itemize}
 
-Zum Fangen von Ionen (\emph{Ionenfallen}) kann die Kraft auf geladene Teilchen im elektromagnetischen Feld ausgenutzt werden.
+\section{Ionenfallen}
+Zum Fangen von Ionen (\emph{Ionenfallen}) kann die Kraft auf geladene Teilchen im elektromagnetischen Feld ausgenutzt werden (Lorentzkraft).
 Tendenziell ist die Kraft auf freie Ladungen groß im Vergleich zur Kraft auf el. / mag. Dipole in inhomogenen Feldern (optische Pinzette, Magnetfalle) oder Streukraft (magneto-optische Falle).
-Daher können bereits mit kleinen Betriebsspannungen hohe Fallentiefen erreicht werden.
+Daher können bereits mit Betriebsspannungen der Größenordnung $100\,\mathrm{V}$ hohe Fallentiefen von $10^6\,\mathrm{K}$ erreicht werden.
+Eine Beschränkung der möglichen Methoden stellt das Earnshaw-Theorem dar.
+Dieses besagt, dass kein Fangen von Teilchen in einem endlichen Raumvolumen durch elektrostatische Kräfte möglich ist.
+Die Aussage folgt mithilfe des Gauß'schen Integralsatzes aus der Maxwell-Gleichung:
+\begin{align}
+	\divergence \vec{E} = 0
+\end{align}
+dabei wurde die Annahme eines ladungsfreien Raumes getroffen.
+Mögliche Lösungen dieses Problems sind dabei, die Verwendung von Ladung in Form eines geladenen Drahtes im Zentrum der Falle, so dass sich das Atom mit endlichem Drehimpuls im Orbit um diesen Draht befindet (\emph{Kingdon-Falle}).
+Eine weiter Lösung ist die verwendung von magneto- und elektrostatischen Feldern (\emph{Penning-Falle}) oder die Verwendung von elektrischen Wechselfeldern (\emph{Paul-Falle}) auf die sich hier konzentriert werden soll.
+
+\subsection{Lineare Paul-Falle}
+Die lineare Paul-Falle besteht aus vier Elektrodenstäben in Quadrupol-Konfiguration Abb.~\ref{}, welche mit einer Wechselspannung betrieben werden, wobei gegenüberliegende Elektroden in Phase sind.
+Eine solche Konfiguration erzeugt ein Sattelpotential in der $x$-$y$-Ebene, was bedeutet, dass die Lage des Ions im Potential stets nur in einer Raumrichtung stabil ist und in der Anderen instabil.
+Bei der linearen Paul-Falle wird die Trägheit des Ions ausgenutzt, um durch eine Wechselspannung hoher Frequenz (typisch Radiofrequenz $1$ - \SI{10}{MHz}) eine stabile Lage in beiden Raumrichtungen zu erzeugen.
+Das Lösen der Bewegungsgleichung (Mathieu-DGL.) für ein Ion liefert die Stabilitätsbedingung:
+\begin{align}
+	q_x = \frac{2 e V_0}{\Omega^2 M r_0^2} \leq \num{0.9}
+\end{align}
 
 
+\section{Fallen für neutrale Atome}
 
 Einführung: Was sind Atomfallen?, Fallentiefe/Potential, Energiecharakterisierung durch Temperatur, Kühlung, Anwendung von Atomfallen
 
