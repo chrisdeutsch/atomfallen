@@ -11,6 +11,8 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 
+\usepackage{blindtext}
+
 \usepackage{siunitx}
 \sisetup{
   output-decimal-marker={,},
@@ -48,80 +50,83 @@ Es werden Atomfallen erklärt und deren Zweck dargestellt. Zur Erläuterung wird
 
 \section{Einführung}
 Viele Fortschritte der modernen Atomphysik konnte durch die Entwicklung neuer Methoden zur Isolation und Manipulation quantenmechanischer Systeme gemacht werden.
-Solche Methoden umfassen unter anderem das Fangen von Atomen in sog.~Atomfallen, aber auch das Kühlen dieser Teilchen durch Laserkühlen.
-Atomfallen dienen dem Einschluss von Atomen in einem endlichen Raumvolumen über längere Zeit, durch ortsabhängige Kräfte.
-In diesem Sinne wäre eine Gasflasche, die ein Gas durch die Gefäßwand im Volumen einschließt, bereits als Atomfalle zu klassifizieren.
-In der Atomphysik ist jedoch Fangen von Atomen ohne materielle Wände wünschenswert, da die harten Stöße mit der Gefäßwand Einfluss nimmt auf die innere Struktur des Atomgases.
-Darüberhinaus steht das Gas im thermischen Kontakt mit der Umgebung, was ().
-Dazu verwendet man Kräfte (?), welche einen Potentialtopf mit einer charakteristischen Tiefe $\Delta E$ erzeugen.
-Oftmals wird die Energie der Teilchen durch eine Temperatur~$T$ gemäß:
+Diese umfassen unter anderem das Fangen von Atomen in sog.~Atomfallen, sowie deren Kühlung durch geeignete Techniken wie z.B.\ der optischen Melasse.
+Atomfallen dienen dem Einschluss von Atomen in einem endlichen Raumvolumen durch ortsabhängige Kräfte. 
+Dabei ist ein Fangen der Atome ohne materielle Wände wünschenswert ist, da dadurch ein minimaler Einfluss auf die innere Struktur des Atomgases und thermische Isolation von der Umgebung gewährleistet ist.
+Der Einschluss erfolgt durch einen Potentialtopf der charakteristischen Tiefe~$\Delta E$, welche in der Atomphysik gemäß der Beziehung:
 \begin{align}
 	E = k_\mathrm{B} \cdot T
 \end{align}
-angegeben.
-In diesem Sinne ist die Kühlung für Atomfallen wichtig, da nur Teilchen mit einer Energie $< \Delta E$ in einer Falle gefangen werden können.
-Wichtige Anwendungen:
-\begin{itemize}
-	\item Strukturuntersuchung von Materie bei tiefen Temperaturen (BEC, Ionenkristalle)
-	\item hochauflösende Spektroskopie
-	\begin{itemize}
-		\item Dopplereffekt, Zeitdilatation
-		\item Frequenzstandards / Atomuhren (NP 1989: Ramsay, Paul, Dehmelt)
-	\end{itemize}
-	\item Manipulation quantenmechanischer Systeme einzelner Teilchen
-\end{itemize}
+als Temperatur~$T$ charakterisiert wird.
+Dahingehend ist die Kühlung d.h.\ die Reduzierung der Energie der Teilchen wichtig, da die endliche Fallentiefe~$\Delta E$ die Grenze für die Energie gefangener Atome angibt und damit in enger Verknüpfung zu den Atomfallen steht.
+
+Die Entwicklung der Atomfallen ist besonders wichtig für die Strukturuntersuchung von Materie bei tiefen Temperaturen, was die experimentelle Entdeckung der Bose-Einstein-Kondensate ermöglichte.
+Darüber hinaus ermöglichen sie durch Minimierung von Dopplereffekt und Zeitdilatation die Durchführung hochauflösender Spektroskopie, was insbesondere für die Entwicklung der Atomuhr maßgeblich war.
+In der aktuellen Forschung werden Fallen zur Präparation und Untersuchung quantenmechanischer Systeme verwendet und somit erste Prototypen von \emph{Qubits} (elementare Speichereinheit der Quantencomputer) realisiert.
 
 \section{Ionenfallen}
-Zum Fangen von Ionen (\emph{Ionenfallen}) kann die Kraft auf geladene Teilchen im elektromagnetischen Feld ausgenutzt werden (Lorentzkraft).
-Tendenziell ist die Kraft auf freie Ladungen groß im Vergleich zur Kraft auf el. / mag. Dipole in inhomogenen Feldern (optische Pinzette, Magnetfalle) oder Streukraft (magneto-optische Falle).
-Daher können bereits mit Betriebsspannungen der Größenordnung $100\,\mathrm{V}$ hohe Fallentiefen von $10^6\,\mathrm{K}$ erreicht werden.
-Eine Beschränkung der möglichen Methoden stellt das Earnshaw-Theorem dar.
-Dieses besagt, dass kein Fangen von Teilchen in einem endlichen Raumvolumen durch elektrostatische Kräfte möglich ist.
-Die Aussage folgt mithilfe des Gauß'schen Integralsatzes aus der Maxwell-Gleichung:
+Zum Fangen von Ionen kann die Lorentzkraft im elektromagnetischen Feld ausgenutzt werden.
+Diese ist groß im Vergleich zur Kraft auf elektrische oder magnetische Dipole in inhomogenen Feldern, welche bei der optischen Pinzette (?) oder der Magnetfalle (?) ausgenutzt werden.
+Dadurch können bereits bei kleinen Betriebsspannungen in Größenordnungen einiger \SI{100}{V} Fallentiefen von $10^6 \, \si{K}$ erreicht werden.
+Eine Beschränkung stellt das Earnshaw-Theroem dar, welches besagt, dass geladene Teilchen nicht durch elektrostatische Felder in einem Raumvolumen gefangen werden können.
+Diese Aussage folgt direkt aus der Quellen-/Senkenfreiheit des elektrischen Feldes im ladungsfreien Raum:
 \begin{align}
 	\divergence \vec{E} = 0
 \end{align}
-dabei wurde die Annahme eines ladungsfreien Raumes getroffen.
-Mögliche Lösungen dieses Problems sind dabei, die Verwendung von Ladung in Form eines geladenen Drahtes im Zentrum der Falle, so dass sich das Atom mit endlichem Drehimpuls im Orbit um diesen Draht befindet (\emph{Kingdon-Falle}).
-Eine weiter Lösung ist die verwendung von magneto- und elektrostatischen Feldern (\emph{Penning-Falle}) oder die Verwendung von elektrischen Wechselfeldern (\emph{Paul-Falle}) auf die sich hier konzentriert werden soll.
+Ein Fangen von Atomen kann dennoch erfolgen, wenn eine Kombination von elektro- und magnetostatischem Feld (\emph{Penning-Falle}) oder elektrische Wechselfelder (\emph{Paul-Falle}) verwendet werden.
+Im Folgenden soll exemplarisch für die Ionenfallen die Funktionsweise der linearen Paul-Falle dargestellt werden.
 
 \subsection{Lineare Paul-Falle}
-Die lineare Paul-Falle besteht aus vier Elektrodenstäben in Quadrupol-Konfiguration Abb.~\ref{}, welche mit einer Wechselspannung betrieben werden, wobei gegenüberliegende Elektroden in Phase sind.
-Eine solche Konfiguration erzeugt ein Sattelpotential in der $x$-$y$-Ebene, was bedeutet, dass die Lage des Ions im Potential stets nur in einer Raumrichtung stabil ist und in der Anderen instabil.
-Bei der linearen Paul-Falle wird die Trägheit des Ions ausgenutzt, um durch eine Wechselspannung hoher Frequenz (typisch Radiofrequenz $1$ - \SI{10}{MHz}) eine stabile Lage in beiden Raumrichtungen zu erzeugen.
-Das Lösen der Bewegungsgleichung (Mathieu-DGL.) für ein Ion liefert die Stabilitätsbedingung:
-\begin{align}
-	q_x = \frac{2 e V_0}{\Omega^2 M r_0^2} \leq \num{0.9}
-\end{align}
-
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.32\textwidth]{./figures/lineare_paulfalle.pdf}
+	\caption{Lineare Paul-Falle  bestehend aus vier Quadrupol-Elektroden und zwei positiv geladenen Endkappenelektroden.}
+	\label{fig:paulfalle}
+\end{figure}
+\begin{figure*}[tb!]
+	\centering
+	\includegraphics[width=0.6\textwidth]{./figures/mot_gesamt.pdf}
+	\caption{}
+	\label{fig:mot}
+\end{figure*}
+Die lineare Paul-Falle in Abb.~\ref{fig:paulfalle} besteht aus vier Elektrodenstäben in Quadrupol-Konfiguration, welche mit einer Wechselspannung (Radiofrequenz) betrieben werden, wobei gegenüberliegende Elektroden auf dem selben Potential liegen.
+Eine solche Konfiguration erzeugt ein Sattelpotential in der $x$-$y$-Ebene, was bedeutet, dass die Lage eines Ions im Potential zu einem festen Zeitpunkt stets nur in einer Raumrichtung stabil ist.
+Eine im zeitlichen Mittel stabile Lage des Ions entsteht aufgrund dessen Trägheit, da keine instantane Positionsänderung in der nicht-stabilen Raumrichtung erfolgen kann.
+Eine Auslenkung bildet sich erst aus, wenn bereits eine halbe Periode der Wechselspannung vergangen ist, was dazu führt, dass das Ion in einer stabilen Raumrichtung ausgelenkt ist und somit in das Fallenzentrum zurückgetrieben wird.
+Eine formelle Lösung der Bewegungsgleichung des Ions im Quadrupol-Wechselfeld, sowie die Herleitung der Stabilitätsbedingung findet sich in \cite{foot}.
+Ist Stabilität gegeben, so sind die Ionen in der $x$-$y$-Ebene gefangen und eine Erweiterung auf die $z$-Achse durch Einführen der Endkappenelektroden in Abb.~\ref{fig:paulfalle} möglich.
+Die in einer Paul-Falle kleinste erreichbare Temperatur von \SI{1}{mK} ist durch Heizeffekte aufgrund der am Quadrupol anliegenden Radiofrequenz limitiert, da diese die Ionen zu Oszillationen um das Fallenzentrum anregt.
 
 \section{Fallen für neutrale Atome}
-
-Zum Fangen neutraler Atome kann nichtmehr die Kraft auf freie Ladungsträger verwendet werden.
-Ein neuer Mechanismus \emph{Streukraft} muss verwendet werden, um Kraftübertragung auf das Atom zu ermöglichen.
+Zum Fangen neutraler Atome wird ein anderer Fangmechanismus benötigt.
+Ein Beispiel dafür ist die \emph{Streukraft}, welche auf dem Impulsübertrag eines Photons bei Absorption im Atom basiert.
 
 \subsection{Streukraft}
-Die Streukraft beruht auf dem Impulsübertrag des Photons bei Absorption im Atom.
-Dazu betrachtet man das Atom als Zweiniveausystem mit Niveauabstand $\Delta E = \hbar \omega$. Von rechts werde ein Laser mit der Frequenz $\omega$ eingestrahlt. Bei der Absorption eines Photons des Lasers, geht das Elektron des Atoms in den angeregten Zustand über. Dabei Absorbiert das Atom ebenfalls den Photonenimpuls, welcher in Propagationsrichtung des Lasers zeigt.
-Da der angeregte Zustand des Atoms nur endliche Lebensdauer $\tau$ hat, wird das Atom durch spontane Emission abgeregt, wobei ein erneuter Impulsübertrag (abh. von Emissionsrichtung des Photons).
-Diese findet isotrop statt, d.h. ohne ausgezeichnete Raumrichtung, was dazu führt, dass im statistischen Mittel über viele Emissionsprozesse kein Impulsübertrag (bei der Emission) stattfindet.
-Der Impulsübertrag der Absorption ist aufgrund der ausgezeichneten Propagationsrichtung des Lasers, jedoch stets gleich, was zu einer Kraft in Laserrichtung führt.
-Der statistische Prozess der Emission stellt die untere Grenze für die minimal erreichbare Temperatur.
+Man betrachte ein Atom als Zweiniveausystem, welches durch einen Laser bestrahlt wird, der auf den Übergang im Atom abgestimmt ist.
+Bei der Absorption eines Photons des Lasers geht das Atom in den angeregten Zustand und der Impuls des Photons wird auf das Atom übertragen.
+Aufgrund der endlichen Lebensdauer des angeregten Zustandes, wird das Atom durch spontante Emission abgeregt. 
+Dies hat einen weiteren Impulsübertrag zur Folge, welcher abhängig von der Emissionsrichtung des Photons ist.
+Da die spontante Emission isotrop verläuft, kommt es im statistischen Mittel über viele Emissionsprozesse zu keinem Impulsübertrag auf das Atom.
+Andererseits ist die Propagationsrichtung des Laser fest und somit auch der Impulsübertrag bei Absorption.
+Dadurch wirkt auf das Atom eine Kraft, welche in Laserrichtung zeigt.
+Der statistische Prozess der Emission stellt eine untere Grenze (Doppler-Temperatur) für die minimal erreichbare Temperatur der Teilchen, welche typischerweise in der Größenordnung \SI{100}{\micro\kelvin} liegt.
 
 \subsection{Magneto-optische Falle}
-Der Mechanismus der Streukraft wird bei der magneto-optischen Falle (MOT)  ausgenutzt, um eine rücktreibende Kraft auf die Atome (zu übertragen).
-Dabei wird exemplarisch die Zeeman-Aufspaltung $\Delta E = g_\mathrm{J} \mu_\mathrm{B} m_\mathrm{J} B$ im $J=0$, $J=1$ Zweiniveausystem dargestellt.
-Zunächst erfolgt die Betrachtung in einer Raumdimension.
-Wird ein Magnetfeld mit konstantem Gradienten und Nullpunkt im Zentrum der Falle überlagert, so spaltet das dreifach entartete $J=1$-Niveau gemäß der magnetischen Quantenzahl $m_\mathrm{J}$ in drei separate Niveaus.
+Der Mechanismus der Streukraft wird bei der magneto-optischen Falle ausgenutzt, um neutrale Atome zu fangen.
+Dazu wird das Atom wie in Abb.~\ref{fig:mot} zunächst in einer Raumdimension als Zweiniveausystem mit dem Gesamtdrehimpulsquantenzahlen $J=0$ und $1$ betrachtet.
+Wird nun ein Magnetfeld mit konstantem Gradienten und Nullpunkt im Zentrum der Falle überlagert, so spaltet sich das dreifach entartete $(J=1)$-Niveau gemäß des Zeeman-Effektes in drei separate Niveaus auf.
+Nun wird von links ein $\sigma^+$ und von rechts ein $\sigma^-$-polarisierter Laser eingestrahlt, welcher rotverstimmt gegen das .
+$\sigma^\pm$-Polarisation bezeichnet dabei zirkulare Polarisation die Übergänge mit der Änderung der magnetischen Quantenzahl $\Delta m_\mathrm{J} = \pm 1$ ermöglicht.
+
+
+Dabei wird exemplarisch die Zeeman-Aufspaltung $\Delta E = g_\mathrm{J} \mu_\mathrm{B} m_\mathrm{J} B_z$ im $J=0$, $J=1$ Zweiniveausystem dargestellt.
+
 Wird nun von links ein $\sigma^+$ und von rechts ein $\sigma^-$-polarisierter ($\sigma^\pm$-Polarisation ist zirkulare Polarisation die die Übergänge $\Delta m_\mathrm{J} = \pm 1$ erlauben) Laser eingestrahlt, so wirkt eine ins Zentrum rücktreibende Kraft.
 Diese wird dadurch verursacht, dass ein nach links ausgelenktes Atom vermehrt den $\sigma^-$-polarisierten Laser absorbiert und dadurch gemäß der Streukraft eine Kraft in Laserrichtung erfährt.
 Der umgekehrte Fall trifft für ein nach rechts ausgelenktes Atom ein.
 Dies ermöglicht das Fangen von Atomen in einer Raumrichtung.
 Die Erweiterung auf drei Raumdimensionen erfolgt durch ein Anti-Helmholtz-Spulenpaar, welches einen nahezu konstanten Magnetfeldgradienten in allen Raumrichtungen im Zentrum erzeugt.
 Darüberhinaus müssen drei Paare  entsprechend polarisierter Laser verwendet werden, um das Fangen in drei Dimensionen zu ermöglichen.
-
-
-Abschließender Vergleich
 
 
 \begin{thebibliography}{}
