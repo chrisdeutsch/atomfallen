@@ -21,6 +21,9 @@
 
 \usepackage{graphicx}
 
+\usepackage{dcolumn}
+\usepackage{bm}
+
 \usepackage{hyperref}
 \hypersetup{
   colorlinks = true,
@@ -35,21 +38,21 @@
 
 \author{Christopher Deutsch}
 
-%\email[E-Mail:\,]{christopher.deutsch@uni-bonn.de}
+\email[E-Mail:\,]{christopher.deutsch@uni-bonn.de}
 
 %\affiliation{Institut, Adresse}
 
 
 \begin{abstract}
 %
-Es werden Atomfallen erklärt und deren Zweck dargestellt. Zur Erläuterung wird jeweils eine Ionenfalle (Paul-Falle) sowie eine Falle für neutrale Atome (magneto-optische Falle) vorgestellt. Anschließend folgt ein Vergleich der beiden Fallen und ihrer Parameter.
+Dieser Bericht soll eine Definition des Begriffs der Atomfallen geben und deren Bedeutung in der modernen Atomphysik darstellen. Anschließend soll die Funktionsweise am Beispiel einer Ionenfalle (lineare Paul-Falle) und einer Falle für neutrale Atome (magneto-optische Falle) erläutert werden.
 %
 \end{abstract}
 
 \maketitle
 
 \section{Einführung}
-Viele Fortschritte der modernen Atomphysik konnte durch die Entwicklung neuer Methoden zur Isolation und Manipulation quantenmechanischer Systeme gemacht werden.
+Viele Fortschritte der modernen Atomphysik konnte durch die Entwicklung neuer Methoden zur Isolation und Manipulation quantenmechanischer Systeme gemacht werden \cite{trapping}.
 Diese umfassen unter anderem das Fangen von Atomen in sog.~Atomfallen, sowie deren Kühlung durch geeignete Techniken wie z.B.\ der optischen Melasse.
 Atomfallen dienen dem Einschluss von Atomen in einem endlichen Raumvolumen durch ortsabhängige Kräfte. 
 Dabei ist ein Fangen der Atome ohne materielle Wände wünschenswert ist, da dadurch ein minimaler Einfluss auf die innere Struktur des Atomgases und thermische Isolation von der Umgebung gewährleistet ist.
@@ -77,9 +80,10 @@ Im Folgenden soll exemplarisch für die Ionenfallen die Funktionsweise der linea
 
 \subsection{Lineare Paul-Falle}
 \begin{figure}[h]
+	\vspace{-0.2cm}
 	\centering
 	\includegraphics[width=0.32\textwidth]{./figures/lineare_paulfalle.pdf}
-	\caption{Schematischer Aufbau einer linearen Paul-Falle  bestehend aus vier Quadrupol-Elektroden und zwei positiv geladenen Endkappenelektroden.}
+	\caption{Schematischer Aufbau einer linearen Paul-Falle  bestehend aus vier Elektroden in Quadrupol-Konfiguration und zwei positiv geladenen Endkappenelektroden. Im Fallenzentrum ist eine Kette von Ionen angedeutet.}
 	\label{fig:paulfalle}
 \end{figure}
 Die lineare Paul-Falle in Abb.~\ref{fig:paulfalle} besteht aus vier Elektrodenstäben in Quadrupol-Konfiguration, welche mit einer Wechselspannung (Radiofrequenz) betrieben werden, wobei gegenüberliegende Elektroden auf dem selben Potential liegen.
@@ -108,22 +112,26 @@ Der statistische Prozess der Emission stellt eine untere Grenze (Doppler-Tempera
 \subsection{Magneto-optische Falle}
 \begin{figure}[t]
 	\centering
-	\vspace{0.4cm}
+	\vspace{0.5cm}
 	\includegraphics[width=80mm]{./figures/mot_gesamt_resize.pdf}
-	\caption{Energieschema eines Atoms in einer eindimensionalen magneto-optischen Falle. Die Aufspaltung der Energieniveaus erfolgt aufgrund eines konstanten Magnetfeldgradienten mit Nullpunkt im Zentrum.}
+	\caption{Energieschema eines Atoms in einer eindimensionalen magneto-optischen Falle mit Gesamtdrehimpulsquantenzahl $J$ und magnetischer Quantenzahl $m_\mathrm{J}$. Die Aufspaltung der Energieniveaus erfolgt aufgrund eines Magnetfeldes mit konstantem Gradienten und Nullpunkt im Zentrum und ist dadurch positionsabhängig. Von den Seiten treten $\sigma^\pm$-polarisierte Laser mit der Frequenz $\omega$ in die Falle ein. Auf der $z$-Achse ist die Kraft $F$ auf ein aus dem Zentrum ausgelenkten Atoms dargestellt.}
 	\label{fig:mot}
+	\vspace{-0.8cm}
 \end{figure}
 Der Mechanismus der Streukraft wird bei der magneto-optischen Falle ausgenutzt, um neutrale Atome zu fangen.
-Dazu wird das Atom wie in Abb.~\ref{fig:mot} zunächst in einer Raumdimension als Zweiniveausystem mit dem Gesamtdrehimpulsquantenzahlen $J=0$ und $1$ betrachtet.
+Dazu betrachtet man exemplarisch ein Atom mit einem Übergang von der Gesamtdrehimpulsquantenzahl $J=0$ nach $J=1$ in einer Raumdimension (Abb.~\ref{fig:mot}).
 Wird nun ein Magnetfeld mit konstantem Gradienten und Nullpunkt im Zentrum der Falle überlagert, so spaltet sich das dreifach entartete $(J=1)$-Niveau gemäß des Zeeman-Effektes in drei separate Niveaus auf.
 Nun wird von links ein $\sigma^+$ und von rechts ein $\sigma^-$-polarisierter Laser eingestrahlt, welche rotverstimmt gegen den nicht-aufgespaltenen Übergang sind.
-$\sigma^\pm$-Polarisation bezeichnet dabei zirkulare Polarisation die Übergänge mit der Änderung der magnetischen Quantenzahl $\Delta m_\mathrm{J} = \pm 1$ erlauben.
+$\sigma^\pm$-Polarisation bezeichnet dabei zirkulare Polarisation die Übergänge mit der Änderung der magnetischen Quantenzahl $\Delta m_\mathrm{J} = \pm 1$ bewirken.
 Dadurch wirkt auf das Atom eine in das Zentrum zurücktreibende Kraft aufgrund der Streukraft.
 Diese wird dadurch verursacht, dass ein nach links ausgelenktes Atom vermehrt den $\sigma^+$-polarisierten Laser absorbiert, da dort der $\Delta m_\mathrm{J} = +1$ Übergang in Resonanz verschoben wird. Der umgekehrte Fall tritt auch für ein nach rechts ausgelenktes Atom ein.
 Durch diesen Effekt ist ein Fangen von Atomen in einer Raumrichtung möglich.
-Die Erweiterung auf drei Raumdimensionen erfolgt durch ein Anti-Helmholtz-Spulenpaar, welches einen nahezu konstanten Magnetfeldgradienten in allen drei Raumrichtungen im Zentrum des Paares erzeugt.
-Darüber hinaus werden drei Paare entsprechend polarisierter Laserstrahlen benötigt, um Fangen in drei Dimensionen zu ermöglichen.
+
+Die Erweiterung auf drei Raumdimensionen erfolgt durch ein Anti-Helmholtz-Spulenpaar, welches einen nahezu konstanten Magnetfeldgradienten in allen drei Raumrichtungen im Zentrum des Spulenpaares erzeugt.
+Darüber hinaus wird zur Erzeugung der rücktreibenden Kraft drei Paare entsprechend polarisierter Laserstrahlen benötigt.
 Die magneto-optische Falle erreicht im Vergleich zu den Ionenfallen nur kleine Fallentiefen der Größenordnung \SI{1}{K}.
+Außerdem können nur Atome gefangen werden, die einen geeigneten Übergang aufweisen
+
 
 \begin{thebibliography}{}
 \bibitem{trapping}
