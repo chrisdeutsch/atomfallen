@@ -35,7 +35,7 @@
 
 \author{Christopher Deutsch}
 
-\email[E-Mail:\,]{christopher.deutsch@uni-bonn.de}
+%\email[E-Mail:\,]{christopher.deutsch@uni-bonn.de}
 
 %\affiliation{Institut, Adresse}
 
@@ -65,8 +65,7 @@ Darüber hinaus ermöglichen sie durch Minimierung von Dopplereffekt und Zeitdil
 In der aktuellen Forschung werden Fallen zur Präparation und Untersuchung quantenmechanischer Systeme verwendet und somit erste Prototypen von \emph{Qubits} (elementare Speichereinheit der Quantencomputer) realisiert.
 
 \section{Ionenfallen}
-Zum Fangen von Ionen kann die Lorentzkraft im elektromagnetischen Feld ausgenutzt werden.
-Diese ist groß im Vergleich zur Kraft auf elektrische oder magnetische Dipole in inhomogenen Feldern, welche bei der optischen Pinzette (?) oder der Magnetfalle (?) ausgenutzt werden.
+Zum Fangen von Ionen kann die Lorentzkraft im elektromagnetischen Feld ausgenutzt werden, welche groß ist im Vergleich zu typischen Kräften auf neutrale Atome.
 Dadurch können bereits bei kleinen Betriebsspannungen in Größenordnungen einiger \SI{100}{V} Fallentiefen von $10^6 \, \si{K}$ erreicht werden.
 Eine Beschränkung stellt das Earnshaw-Theroem dar, welches besagt, dass geladene Teilchen nicht durch elektrostatische Felder in einem Raumvolumen gefangen werden können.
 Diese Aussage folgt direkt aus der Quellen-/Senkenfreiheit des elektrischen Feldes im ladungsfreien Raum:
@@ -80,15 +79,9 @@ Im Folgenden soll exemplarisch für die Ionenfallen die Funktionsweise der linea
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.32\textwidth]{./figures/lineare_paulfalle.pdf}
-	\caption{Lineare Paul-Falle  bestehend aus vier Quadrupol-Elektroden und zwei positiv geladenen Endkappenelektroden.}
+	\caption{Schematischer Aufbau einer linearen Paul-Falle  bestehend aus vier Quadrupol-Elektroden und zwei positiv geladenen Endkappenelektroden.}
 	\label{fig:paulfalle}
 \end{figure}
-\begin{figure*}[tb!]
-	\centering
-	\includegraphics[width=0.6\textwidth]{./figures/mot_gesamt.pdf}
-	\caption{}
-	\label{fig:mot}
-\end{figure*}
 Die lineare Paul-Falle in Abb.~\ref{fig:paulfalle} besteht aus vier Elektrodenstäben in Quadrupol-Konfiguration, welche mit einer Wechselspannung (Radiofrequenz) betrieben werden, wobei gegenüberliegende Elektroden auf dem selben Potential liegen.
 Eine solche Konfiguration erzeugt ein Sattelpotential in der $x$-$y$-Ebene, was bedeutet, dass die Lage eines Ions im Potential zu einem festen Zeitpunkt stets nur in einer Raumrichtung stabil ist.
 Eine im zeitlichen Mittel stabile Lage des Ions entsteht aufgrund dessen Trägheit, da keine instantane Positionsänderung in der nicht-stabilen Raumrichtung erfolgen kann.
@@ -102,6 +95,7 @@ Zum Fangen neutraler Atome wird ein anderer Fangmechanismus benötigt.
 Ein Beispiel dafür ist die \emph{Streukraft}, welche auf dem Impulsübertrag eines Photons bei Absorption im Atom basiert.
 
 \subsection{Streukraft}
+\label{streukraft}
 Man betrachte ein Atom als Zweiniveausystem, welches durch einen Laser bestrahlt wird, der auf den Übergang im Atom abgestimmt ist.
 Bei der Absorption eines Photons des Lasers geht das Atom in den angeregten Zustand und der Impuls des Photons wird auf das Atom übertragen.
 Aufgrund der endlichen Lebensdauer des angeregten Zustandes, wird das Atom durch spontante Emission abgeregt. 
@@ -112,29 +106,31 @@ Dadurch wirkt auf das Atom eine Kraft, welche in Laserrichtung zeigt.
 Der statistische Prozess der Emission stellt eine untere Grenze (Doppler-Temperatur) für die minimal erreichbare Temperatur der Teilchen, welche typischerweise in der Größenordnung \SI{100}{\micro\kelvin} liegt.
 
 \subsection{Magneto-optische Falle}
+\begin{figure}[t]
+	\centering
+	\vspace{0.4cm}
+	\includegraphics[width=80mm]{./figures/mot_gesamt_resize.pdf}
+	\caption{Energieschema eines Atoms in einer eindimensionalen magneto-optischen Falle. Die Aufspaltung der Energieniveaus erfolgt aufgrund eines konstanten Magnetfeldgradienten mit Nullpunkt im Zentrum.}
+	\label{fig:mot}
+\end{figure}
 Der Mechanismus der Streukraft wird bei der magneto-optischen Falle ausgenutzt, um neutrale Atome zu fangen.
 Dazu wird das Atom wie in Abb.~\ref{fig:mot} zunächst in einer Raumdimension als Zweiniveausystem mit dem Gesamtdrehimpulsquantenzahlen $J=0$ und $1$ betrachtet.
 Wird nun ein Magnetfeld mit konstantem Gradienten und Nullpunkt im Zentrum der Falle überlagert, so spaltet sich das dreifach entartete $(J=1)$-Niveau gemäß des Zeeman-Effektes in drei separate Niveaus auf.
-Nun wird von links ein $\sigma^+$ und von rechts ein $\sigma^-$-polarisierter Laser eingestrahlt, welcher rotverstimmt gegen das .
-$\sigma^\pm$-Polarisation bezeichnet dabei zirkulare Polarisation die Übergänge mit der Änderung der magnetischen Quantenzahl $\Delta m_\mathrm{J} = \pm 1$ ermöglicht.
-
-
-Dabei wird exemplarisch die Zeeman-Aufspaltung $\Delta E = g_\mathrm{J} \mu_\mathrm{B} m_\mathrm{J} B_z$ im $J=0$, $J=1$ Zweiniveausystem dargestellt.
-
-Wird nun von links ein $\sigma^+$ und von rechts ein $\sigma^-$-polarisierter ($\sigma^\pm$-Polarisation ist zirkulare Polarisation die die Übergänge $\Delta m_\mathrm{J} = \pm 1$ erlauben) Laser eingestrahlt, so wirkt eine ins Zentrum rücktreibende Kraft.
-Diese wird dadurch verursacht, dass ein nach links ausgelenktes Atom vermehrt den $\sigma^-$-polarisierten Laser absorbiert und dadurch gemäß der Streukraft eine Kraft in Laserrichtung erfährt.
-Der umgekehrte Fall trifft für ein nach rechts ausgelenktes Atom ein.
-Dies ermöglicht das Fangen von Atomen in einer Raumrichtung.
-Die Erweiterung auf drei Raumdimensionen erfolgt durch ein Anti-Helmholtz-Spulenpaar, welches einen nahezu konstanten Magnetfeldgradienten in allen Raumrichtungen im Zentrum erzeugt.
-Darüberhinaus müssen drei Paare  entsprechend polarisierter Laser verwendet werden, um das Fangen in drei Dimensionen zu ermöglichen.
-
+Nun wird von links ein $\sigma^+$ und von rechts ein $\sigma^-$-polarisierter Laser eingestrahlt, welche rotverstimmt gegen den nicht-aufgespaltenen Übergang sind.
+$\sigma^\pm$-Polarisation bezeichnet dabei zirkulare Polarisation die Übergänge mit der Änderung der magnetischen Quantenzahl $\Delta m_\mathrm{J} = \pm 1$ erlauben.
+Dadurch wirkt auf das Atom eine in das Zentrum zurücktreibende Kraft aufgrund der Streukraft.
+Diese wird dadurch verursacht, dass ein nach links ausgelenktes Atom vermehrt den $\sigma^+$-polarisierten Laser absorbiert, da dort der $\Delta m_\mathrm{J} = +1$ Übergang in Resonanz verschoben wird. Der umgekehrte Fall tritt auch für ein nach rechts ausgelenktes Atom ein.
+Durch diesen Effekt ist ein Fangen von Atomen in einer Raumrichtung möglich.
+Die Erweiterung auf drei Raumdimensionen erfolgt durch ein Anti-Helmholtz-Spulenpaar, welches einen nahezu konstanten Magnetfeldgradienten in allen drei Raumrichtungen im Zentrum des Paares erzeugt.
+Darüber hinaus werden drei Paare entsprechend polarisierter Laserstrahlen benötigt, um Fangen in drei Dimensionen zu ermöglichen.
+Die magneto-optische Falle erreicht im Vergleich zu den Ionenfallen nur kleine Fallentiefen der Größenordnung \SI{1}{K}.
 
 \begin{thebibliography}{}
-\bibitem{foot}
-C.\,J.\,Foot, {\it Atomic Physics} (Oxford University Press, 2005) 1st ed.
-
 \bibitem{trapping}
 C.\,E.\,Wieman, D.\,E.\,Pritchard, D.\,J.\,Wineland, {\it Atom cooling, trapping, and quantum manipulation}, Rev. Mod. Phys. \textbf{71}, 2 (1999)
+
+\bibitem{foot}
+C.\,J.\,Foot, {\it Atomic Physics} (Oxford University Press, 2005) 1st ed.
 
 \end{thebibliography}
 
