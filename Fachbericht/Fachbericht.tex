@@ -64,14 +64,14 @@ als Temperatur~$T$ charakterisiert wird.
 Dahingehend ist die Kühlung d.h.\ die Reduzierung der Energie der Teilchen wichtig, da die endliche Fallentiefe~$\Delta E$ die Grenze für die Energie gefangener Atome angibt und damit in enger Verknüpfung zu den Atomfallen steht.
 
 Die Entwicklung der Atomfallen ist besonders wichtig für die Strukturuntersuchung von Materie bei tiefen Temperaturen, was die experimentelle Entdeckung der Bose-Einstein-Kondensate ermöglichte.
-Darüber hinaus ermöglichen sie durch Minimierung von Dopplereffekt und Zeitdilatation die Durchführung hochauflösender Spektroskopie, was insbesondere für die Entwicklung der Atomuhr maßgeblich war.
-In der aktuellen Forschung werden Fallen zur Präparation und Untersuchung quantenmechanischer Systeme verwendet und somit erste Prototypen von \emph{Qubits} (elementare Speichereinheit der Quantencomputer) realisiert.
+Darüber hinaus ermöglichen sie durch Minimierung von Doppler-Effekt und Zeitdilatation die Durchführung hochauflösender Spektroskopie, was insbesondere für die Entwicklung der Atomuhr maßgeblich war.
+In der aktuellen Forschung werden Fallen zur Präparation und Untersuchung quantenmechanischer Systeme verwendet und somit erste Prototypen von Qubits (elementare Speichereinheit der Quantencomputer) realisiert.
 
 \section{Ionenfallen}
 Zum Fangen von Ionen kann die Lorentzkraft im elektromagnetischen Feld ausgenutzt werden, welche groß ist im Vergleich zu typischen Kräften auf neutrale Atome.
 Dadurch können bereits bei kleinen Betriebsspannungen in Größenordnungen einiger \SI{100}{V} Fallentiefen von $10^6 \, \si{K}$ erreicht werden.
 Eine Beschränkung stellt das Earnshaw-Theroem dar, welches besagt, dass geladene Teilchen nicht durch elektrostatische Felder in einem Raumvolumen gefangen werden können.
-Diese Aussage folgt direkt aus der Quellen-/Senkenfreiheit des elektrischen Feldes im ladungsfreien Raum:
+Diese Aussage folgt direkt aus der Quellenfreiheit des elektrischen Feldes im ladungsfreien Raum:
 \begin{align}
 	\divergence \vec{E} = 0
 \end{align}
@@ -80,10 +80,10 @@ Im Folgenden soll exemplarisch für die Ionenfallen die Funktionsweise der linea
 
 \subsection{Lineare Paul-Falle}
 \begin{figure}[h]
-	\vspace{-0.2cm}
+	\vspace{-0.4cm}
 	\centering
 	\includegraphics[width=0.32\textwidth]{./figures/lineare_paulfalle.pdf}
-	\caption{Schematischer Aufbau einer linearen Paul-Falle  bestehend aus vier Elektroden in Quadrupol-Konfiguration und zwei positiv geladenen Endkappenelektroden. Im Fallenzentrum ist eine Kette von Ionen angedeutet.}
+	\caption{Schematischer Aufbau einer linearen Paul-Falle  bestehend aus vier Elektroden in Quadrupol-Konfiguration und zwei positiv geladenen Endkappenelektroden.}
 	\label{fig:paulfalle}
 \end{figure}
 Die lineare Paul-Falle in Abb.~\ref{fig:paulfalle} besteht aus vier Elektrodenstäben in Quadrupol-Konfiguration, welche mit einer Wechselspannung (Radiofrequenz) betrieben werden, wobei gegenüberliegende Elektroden auf dem selben Potential liegen.
@@ -122,15 +122,15 @@ Dazu betrachtet man exemplarisch ein Atom mit einem Übergang von der Gesamtdreh
 Wird nun ein Magnetfeld mit konstantem Gradienten und Nullpunkt im Zentrum der Falle überlagert, so spaltet sich das dreifach entartete $(J=1)$-Niveau gemäß des Zeeman-Effektes in drei separate Niveaus auf.
 Nun wird von links ein $\sigma^+$ und von rechts ein $\sigma^-$-polarisierter Laser eingestrahlt, welche rotverstimmt gegen den nicht-aufgespaltenen Übergang sind.
 $\sigma^\pm$-Polarisation bezeichnet dabei zirkulare Polarisation die Übergänge mit der Änderung der magnetischen Quantenzahl $\Delta m_\mathrm{J} = \pm 1$ bewirken.
-Dadurch wirkt auf das Atom eine in das Zentrum zurücktreibende Kraft aufgrund der Streukraft.
-Diese wird dadurch verursacht, dass ein nach links ausgelenktes Atom vermehrt den $\sigma^+$-polarisierten Laser absorbiert, da dort der $\Delta m_\mathrm{J} = +1$ Übergang in Resonanz verschoben wird. Der umgekehrte Fall tritt auch für ein nach rechts ausgelenktes Atom ein.
+Die Streuung der Photonen des Lasers am Atom verursacht dann eine rücktreibende Kraft in das Zentrum der Falle.
+Dies kann verdeutlicht werden, indem man ausgelenkte Atome im Energieschema Abb.~\ref{fig:mot} betrachtet.
+Ein nach links ausgelenktes Atom wird dann vermehrt den $\sigma^+$-polarisierten Laser absorbieren, da dort der $\Delta m_\mathrm{J} = +1$ Übergang in Resonanz mit dem Laser verschoben wird. Der umgekehrte Fall tritt auch für ein nach rechts ausgelenktes Atom ein.
 Durch diesen Effekt ist ein Fangen von Atomen in einer Raumrichtung möglich.
 
 Die Erweiterung auf drei Raumdimensionen erfolgt durch ein Anti-Helmholtz-Spulenpaar, welches im Zentrum des Spulenpaares einen konstanten Magnetfeldgradienten in allen drei Raumrichtungen erzeugt.
-Außerdem wird zur Erzeugung der rücktreibenden Kraft drei Paare entsprechend polarisierter Laserstrahlen benötigt.
+Außerdem dienen drei Paare entsprechend polarisierter, gegenläufiger Laserstrahlen dem Einschluss der Atome im Fallenvolumen.
 Die magneto-optische Falle erreicht im Vergleich zu den Ionenfallen nur kleine Fallentiefen der Größenordnung \SI{1}{K}.
-Darüber hinaus muss als Voraussetzung für die Funktion der magneto-optischen Falle ein geeigneter Übergang im Atom vorhanden sein.
-
+Darüber hinaus muss als Voraussetzung für deren Funktion ein geeigneter Übergang im Atom vorhanden sein.
 
 \begin{thebibliography}{}
 \bibitem{trapping}
@@ -138,7 +138,6 @@ C.\,E.\,Wieman, D.\,E.\,Pritchard, D.\,J.\,Wineland, {\it Atom cooling, trapping
 
 \bibitem{foot}
 C.\,J.\,Foot, {\it Atomic Physics} (Oxford University Press, 2005) 1st ed.
-
 \end{thebibliography}
 
 
